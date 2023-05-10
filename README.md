@@ -3,6 +3,8 @@ repo containing resources to learn splatoon 3 hacking/modding
 
 THIS REPO IS A HUGE W.I.P. Its my side side project when i literally have nothing else to work on
 
+This will not teach you to use mods/hacks online as that is unsafe. There might be a section to using camera hacks in battle replays later but thats it ****DO NOT USE ANY OF THIS ONLINE. MAKE SURE TO SET UP YOUR HACKED SWITCH PROPERLY****
+
 # Getting Started
 You're gonna need a modded switch unless you would rather use an emulator. Tutorials can be found here. If you're modding a switch with a copy of Splatoon 3 already on it, good for you. If you're modding a switch with no copy of Splatoon 3 I reccomend buying a legit copy. If you're using an emulator, follow the link to setting up an emulator. It will show you how to get games.
 - [Setting up an emulator + Game](https://github.com/Abd-007/Switch-Emulators-Guide/blob/main/README.md)
@@ -13,9 +15,10 @@ These are programs you should get to help you on your hacking journey. These are
 
 - [Flexlion Mod Menu](https://flexlion.github.io/)
 - [Splatoon 3 Save Editor (from flexlion)](https://flexlion.github.io/saveeditor.html)
+- [A Full Splatoon 3 Save](https://ptb.discord.com/channels/410208534861447168/830855276437438485/1081218616734793738) (you can skip this if your save already has everything you want AND you know how to export the save as a file using EdiZon) if you cant get to the file, you need to join the [Ryujinx discord server](https://discord.gg/ryujinx) to get it even if you arent using Ryujinx
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox)
   - [Visual Studio (for compiling, not reccomended for beginners, completely optional)](https://visualstudio.microsoft.com/)
-- [7-Zip](https://www.7-zip.org/)
+- [7-Zip](https://www.7-zip.org/) I would highly reccomend that you set 7-Zip as your main archiving app so it will open .zip files by default
 
 Below are sub-sections for programs that are specific to replacing certain aspects of the game. ***This is not a list of everything you can mod. Just a list of what mods require other programs.***
 
@@ -38,6 +41,9 @@ Kuriimu 2 is a more permanant, install while Kuriimu is a lighter, portable solu
 ### Switch
 Use [NX Dump Tool](https://github.com/DarkMatterCore/nxdumptool?scrlybrkr=c562aa65) to dump the romfs of the game
 
+# Editing Save Files
+First ya gotta obtain a save file. you can get your own save file to hack or download the one in the essential downloads
+
 # How to use mods
 Before you create your first mod, you need to learn how to actually install them. Open the root of your SD card (for emulators go to the root of your virtual sd card) 
 
@@ -54,3 +60,19 @@ To start, inside the contents folder, make a folder called `0100C2500FC20000` th
 Now open the game ID folder and make a folder called `romfs` if you havent caught on already, we are remaking the directory for the game. However when we install mods, we only re-create directories that are realitive to the mod files. Most of the time this is already done for you. For now lets set up flexlion and some other mod that replaces a texture or something. Go back the the SD card root and open the flexlion rar file and drag both folders to the root of the sd card from 7-Zip. This will automatically put all the files where they need to be.
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa9e5974-2c8f-4f7b-a81e-55c6e1ed08a7)
+
+Flexlion is now fully installed! Now lets get a mod to go with it
+
+Head over to [Splatoon 3 Mods on Gamebanana](https://gamebanana.com/mods/games/15056) to get some mods. 
+
+Here is not only a shameless self promotion but also [a good starting mod](https://gamebanana.com/mods/439151) 
+
+Download the file titled `Comet Range Blaster` and ignore the download called `Source`. Source just includes the source files i used to make the mod and decided to upload as well. They are not usually submitted with the mod but i figured they migght be useful to someone? idk
+
+Inside the zip file, go to the `romfs` folder inside the `Comet Range Blaster` folder. Now go to your Splatoon 3 game ID folder on your SD card and drag the `romfs` folder from the 7-Zip window on to the `romfs` folder in your SD card.
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3ae70e5c-5905-411b-b252-b177e49fec57)
+
+Again, this will do all the replacing automatically even if you already have other mods in there.
+
+Now just eject the SD card, put it into your switch, and launch into Atmosphere CFW again. Refer to [this guide](https://rentry.org/EristaEmuNAND#step-4) if you forgot how to do that
