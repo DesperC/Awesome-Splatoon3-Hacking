@@ -95,3 +95,29 @@ Go to whereever your romfs dump is. Open the `UI` folder and the `Icon` folder. 
 
 ![Screenshot 2023-05-10 125139](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/14ef08db-3caf-482f-bf14-b7f8dcd68ff4)
 
+Lets make a badge and a banner mod. To start, lets find the ones we want to replace starting with the badge folder
+
+This may look impossible to search through but its quite easy. Once you get more familliar with everything you'll be able to actually read these names and figure out what it is without even opening it. For now, lets just export all of them as png files so we can decide which one we want to editit
+
+1. Open Switch Toolbox
+2. Go to Tools > Batch Export Textures (All Supported Formats)
+3. Navigate to your romfs directory and then navigate back to `UI/Icon/Badge` all from the pop up window.
+4. `Ctrl` + `A` to select all the files
+5. Press Enter
+6. Now navigate to an easy to find directory and make a new folder. What this is telling the program to do is to export all the textures we selected previously into wherever your easy to find directory is that you chose. For me, I just made a new folder inside my Documents folder to store all the images.
+7. Press Enter
+8. Select Portable Graphics Network if it isnt selected by default.
+9. Uncheck the top 3 options but keep the bottom one checked
+
+  <img width="182" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e755ec24-e3f1-4c76-980d-d7d5fd7174bd">
+
+Click Ok and wait for it to finish. Its going to look like its having a seizure but thats just it opening and closing a progress bar window for every single texture it exports.
+
+Now go to the place you exported them to. You should see all the badge icons in the game. For this tutorial, we're going to select `Badge_Mission_Lv00` because im pretty sure everybody has that badge
+
+10. Open the badge image in a photo editing program of your choice. I'm using Adobe Photoshop 2023. The reason we cant just _replace it_ with any other image is because the image needs to be the exact same pixel size.
+11. Make any edits you want or fit an image of your choice in that space. You can literally do anything as long as you dont change the image dimensions. You can even replace it with an image of another badge you want. Or you can go here to get some custom badges from [this website](https://seymourschlong.github.io/splashtags/) if you know how to get the images from the website page source
+12. Save your finished image as a png.
+
+
+
