@@ -15,15 +15,16 @@ These are programs you should get to help you on your hacking journey. These are
 - [Splatoon 3 Save Editor (from flexlion)](https://flexlion.github.io/saveeditor.html)
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox)
   - [Visual Studio (for compiling, not reccomended for beginners, completely optional)](https://visualstudio.microsoft.com/)
+- [7-Zip](https://www.7-zip.org/)
 
-Below are sub-sections for programs that are specific to replacing certain aspects of the game. **This is not a list of everything you can mod. Just a list of what mods require other programs.**
+Below are sub-sections for programs that are specific to replacing certain aspects of the game. ***This is not a list of everything you can mod. Just a list of what mods require other programs.***
 
 ### Texture Replacement
 - Hex Editor. Any hex editor will do. Personally, I use [HxD](https://mh-nexus.de/en/)
 - Image Editor (Duh)
 
 ### Model Replacement
-As of now, Splatoon 3 model replacement is not possable. The encryption on the models hasnt been cracked yet but as more nintendo games start to use the same encryption, I'm sure its just a matter of time. For now, here is an incomplete list on what you WILL need because I cannot predict the future
+As of now, Splatoon 3 model replacement is not possible. The encryption on the models hasnt been cracked yet but as more nintendo games start to use the same encryption, I'm sure its just a matter of time. For now, here is an incomplete list on what you WILL need because I cannot predict the future
 - [Blender](https://www.blender.org/) or some other 3D Editor
 
 ### Text Replacement
@@ -33,3 +34,10 @@ Kuriimu 2 is a more permanant, install while Kuriimu is a lighter, portable solu
 # Dumping romfs
 ### Emulator
 (Make sure you have any updates/DLC you want installed as an NSP) Right click the game and click "Dump RomFS"
+
+### Switch
+Use [NX Dump Tool](https://github.com/DarkMatterCore/nxdumptool?scrlybrkr=c562aa65) to dump the romfs of the game
+
+# How to use mods
+Before you create your first mod, you need to learn how to actually install them. Open the root of your SD card (for emulators go to the root of your virtual sd card) and open the atmosphere folder. Create a folder called `contents` this folder will be where we store our mods. Atmosphere has a built in tool called LayeredFS that replaces game files when booting up the game. To start, inside the contents folder, make a folder called `0100C2500FC20000` this is the game ID for splatoon 3. If you have mods for other games, you would make more folders with those game IDs. Now open the game ID folder and make a folder called `romfs` if you havent caught on already, we are remaking the directory for the game. However when we install mods, we only re-create directories that are realitive to the mod files. Most of the time this is already done for you. For now lets set up flexlion and some other mod that replaces a texture or something. Drag both folders to the root of the sd card. This will automatically put all the files where they need to be.
+
