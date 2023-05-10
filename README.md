@@ -91,7 +91,7 @@ Looks good! Now that you know how to install mods, lets look at how to make them
 
 # Your First Mod (Tutorial)
 
-Go to whereever your romfs dump is. Open the `UI` folder and the `Icon` folder. you should now see a lot of folders. Here is an outline of them
+Go to wherever your romfs dump is. Open the `UI` folder and the `Icon` folder. you should now see a lot of folders. Here is an outline of them
 
 ![Screenshot 2023-05-10 125139](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/14ef08db-3caf-482f-bf14-b7f8dcd68ff4)
 
@@ -118,6 +118,50 @@ Now go to the place you exported them to. You should see all the badge icons in 
 10. Open the badge image in a photo editing program of your choice. I'm using Adobe Photoshop 2023. The reason we cant just _replace it_ with any other image is because the image needs to be the exact same pixel size.
 11. Make any edits you want or fit an image of your choice in that space. You can literally do anything as long as you dont change the image dimensions. You can even replace it with an image of another badge you want. Or you can go here to get some custom badges from [this website](https://seymourschlong.github.io/splashtags/) if you know how to get the images from the website page source
 12. Save your finished image as a png.
+13. Find the name of the badge you replaced in the badge folder in your romfs dump.
 
+<img width="200" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/84ccb7e9-afe1-4290-be90-4874dcee39b1">
 
+14. Open the badge file in Switch Toolbox by dragging and dropping it.
+15. Open the album icon by clicking the `+` next to it (if there is no plus next to it the double click)
+16. Click the image that appears
+
+<img width="662" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/6d590fdd-1d92-4c75-a38b-7d6c1d81c2ba">
+
+17. Right click the image in the heriarchy and select `Replace`
+
+<img width="218" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b7772570-915d-49dd-bdc1-2a7582df1883">
+
+18. Navigate to where you saved the custom badge and select it.
+19. In the new options window, change the format to `B8_G8_R8_A8_UNORM` I would reccomend alternating between all the formats to see which one fits best. In my case, this format gives a softer edge as well as an alpha channel and good colors. Select the format box and use the arrow keys to quickly alternate.
+20. Click Ok
+21. Hover over `Use SRGB` on the right and click the dropdown to change it from false to true
+
+<img width="266" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/8340761b-601c-4b33-a6a6-ed687008599a">
+
+22. Click the save icon in the top left 
+
+<img width="215" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/74b2edd6-4fdd-4433-899b-0b4396c30e06">
+
+23. Click yes to the windows that says "Compress file with ZSTD?"
+
+The file has now replaced the one you originally opened in toolbox. Go back to the badge folder in your romfs dump and find the file you just replaced 
+
+<img width="200" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/84ccb7e9-afe1-4290-be90-4874dcee39b1">
+
+TIP: You can actually see where the file saved via the notification that pops up when you perform a successful file save
+  
+<img width="305" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/a711d13f-faad-4250-930a-5d1997bb52a2">
+
+24. Copy the file and go to the game ID folder on the sd card (SD/atmosphere/contents)
+25. Enter the romfs folder
+
+Steps 26 - 28 can be skipped if you downloaded my Comet Range Blaster mod or any other mod that changes UI textures
+
+26. Make a folder called `UI`
+27. Inside that folder, make a folder called `Icon`
+28. Inside that folder, make a folder called `Badge`
+29. Paste the file inside the `Badge` folder
+
+You just made a mod to replace that badge! As you can see, LayeredFS replaces only the files given to it meaning you need to recreate the directory for any files you want to replace in romfs. If you're up for a challenge, try to make a mod that replaces a banner. It's the same process but different folders and images. Remember tha banner folder is called `Npl`
 
