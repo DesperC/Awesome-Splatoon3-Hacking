@@ -11,7 +11,7 @@ You're gonna need a modded switch unless you would rather use an emulator. Tutor
 - [Hacking your switch](https://rentry.org/SwitchHackingIsEasy)
 
 # Essentials
-These are programs you should get to help you on your hacking journey. These are all for game modding and NOT for hacking your switch and setting up custom firmware (CFW). For a guide on setting up your switch with CFW, see above section.
+These are things you need get to help you on your hacking journey. These are all for game modding and NOT for hacking your switch and setting up custom firmware (CFW). For a guide on setting up your switch with CFW, see above section.
 
 - [Flexlion Mod Menu](https://flexlion.github.io/)
 - [Splatoon 3 Save Editor (from flexlion)](https://flexlion.github.io/saveeditor.html)
@@ -44,7 +44,7 @@ Use [Nx Dump Tool](https://github.com/DarkMatterCore/nxdumptool/releases/tag/v1.
 you can find a tutorial on how to use NX Dump Tool [here](https://suchmememanyskill.github.io/guides/switchdumpguide/)
 
 # Exporting, Editing, and Importing Save Files
-First ya gotta obtain a save file. you can get your own save file to hack **OR** download the one in the essential downloads
+First ya gotta obtain a save file. you can get your own save file to hack **OR** download the one in the [essential downloads](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#essentials)
 
 [Download the EdiZon NRO file](https://github.com/WerWolv/EdiZon/releases/tag/v3.1.0)
 
