@@ -91,6 +91,8 @@ Looks good! Now that you know how to install mods, lets look at how to make them
 
 # Your First Mod (Tutorial)
 
+Please ignore the inconsistency of the OS in the screenshots. Some of this was made on my school laptop that administration refuses to upgrade to windows 11
+
 Go to wherever your romfs dump is. Open the `UI` folder and the `Icon` folder. you should now see a lot of folders. Here is an outline of them
 
 ![Screenshot 2023-05-10 125139](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/14ef08db-3caf-482f-bf14-b7f8dcd68ff4)
