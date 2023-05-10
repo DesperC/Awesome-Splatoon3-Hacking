@@ -35,14 +35,24 @@ As of now, Splatoon 3 model replacement is not possible. The encryption on the m
 Kuriimu 2 is a more permanant, install while Kuriimu is a lighter, portable solution.
 
 # Dumping romfs
-### Emulator
-(Make sure you have any updates/DLC you want installed as an NSP) Right click the game and click "Dump RomFS"
+### Emulator (Beginner reccomended)
+(Make sure you have any updates/DLC you want installed as an NSP) Right click the game and click "Dump RomFS" **Make sure to remember where you dumped these files or put them in a place you will remember.**
 
-### Switch
-Use [NX Dump Tool](https://github.com/DarkMatterCore/nxdumptool?scrlybrkr=c562aa65) to dump the romfs of the game
+### Switch (Not for beginners)
+Use [Nx Dump Tool](https://github.com/DarkMatterCore/nxdumptool/releases/tag/v1.1.15) to dump the romfs of the game
 
-# Editing Save Files
+you can find a tutorial on how to use NX Dump Tool [here](https://suchmememanyskill.github.io/guides/switchdumpguide/)
+
+# Exporting, Editing, and Importing Save Files
 First ya gotta obtain a save file. you can get your own save file to hack or download the one in the essential downloads
+
+[Download the EdiZon NRO file](https://github.com/WerWolv/EdiZon/releases/tag/v3.1.0)
+
+Once you download, visit [this tutorial](https://www.cfwaifu.com/edizon-saves/) for a full setup process
+
+Go to [The Splatoon 3 Save Editor](https://flexlion.github.io/saveeditor.html) to change (almost) anything about your save and then redownload it (rename the new save file back to `save.dat` if it was changed)
+
+To import it back to splatoon 3, refer to the second part of the tutorial above
 
 # How to use mods
 Before you create your first mod, you need to learn how to actually install them. Open the root of your SD card (for emulators go to the root of your virtual sd card) 
@@ -77,6 +87,11 @@ Again, this will do all the replacing automatically even if you already have oth
 
 Now just eject the SD card, put it into your switch, and launch into Atmosphere CFW again. Refer to [this guide](https://rentry.org/EristaEmuNAND#step-4) if you forgot how to do that
 
-Looks good! Now that you know how to install mods, lets look at how to make them now.
+Looks good! Now that you know how to install mods, lets look at how to make them now. I'm going to walk you thorugh making a basic UI image replacement mod
 
+# Your First Mod (Tutorial)
+
+Go to whereever your romfs dump is. Open the `UI` folder and the `Icon` folder. you should now see a lot of folders. Here is an outline of them
+
+![Screenshot 2023-05-10 125139](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/14ef08db-3caf-482f-bf14-b7f8dcd68ff4)
 
