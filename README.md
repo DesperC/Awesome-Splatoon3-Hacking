@@ -76,3 +76,7 @@ Inside the zip file, go to the `romfs` folder inside the `Comet Range Blaster` f
 Again, this will do all the replacing automatically even if you already have other mods in there.
 
 Now just eject the SD card, put it into your switch, and launch into Atmosphere CFW again. Refer to [this guide](https://rentry.org/EristaEmuNAND#step-4) if you forgot how to do that
+
+Looks good! Now that you know how to install mods, lets look at how to make them now.
+
+
