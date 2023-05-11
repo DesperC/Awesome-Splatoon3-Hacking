@@ -167,3 +167,29 @@ Steps 26 - 28 can be skipped if you downloaded my Comet Range Blaster mod or any
 
 You just made a mod to replace that badge! As you can see, LayeredFS replaces only the files given to it meaning you need to recreate the directory for any files you want to replace in romfs. If you're up for a challenge, try to make a mod that replaces a banner. It's the same process but different folders and images. Remember tha banner folder is called `Npl`
 
+# File Types and Folder Structures
+You might be wondering why splatoon 3 only uses `.zs` files inside the romfs folder. ZS is actually short for ZSTD Compression and all that does (that we care about) is add `.zs` to the end of files so the real file type is always behind that. Below are all the other file formats that you can find in the files. Some files are not documented here yet because i dont have the knowledge about them
+
+- `.zs` ZSTD compression used throughout the game files.
+
+- `.bfres` 3D model file containing Models, Textures, Animations, Materials and more. as of now, the encryption keeps us from being able to replace everything besides textures.
+
+- `.pack` Quite literally a package containing many other files. There is really only 1 .pack file that we will go through because it controls most of everything. but that's for later. Usually contains game parameters
+
+- `.sarc` most .sarc files are the language files located in /Mals. Usually contains Message Binary Text files (.msbt) 
+  - `.msbt` Contains text that the game uses for each language file. Can be opened in toolbox but needs another program like Kuriimu to be able to edit and save
+
+- `.bfarc` File containing font files located in /Font (they can be ripped and installed like normal fonts too)
+
+- `.bgyml`, `.gyml`, `.byml`, Types of YAML files. Usually contain defining properties.
+
+- `.bntx` Contains an image(s). Most are found in /UI/Icon.
+
+- `.blarc` Layout file that tells the game how to display UI elements (contains a .bntx file for textures).
+  - `.bflyt` Part of the layout that tells the game how and where to place/animate UI images on screen
+  - `.bflan` Animation file for layout file
+
+- `.bars` File containing game audio. Not usable in switch toolbox but still editable with other programs but we will get to that later.
+  - `.bwav` Binary WAV file. Usually nest inside a .bars file but can also be found in /Sound/Resource/Stream.
+  
+  
