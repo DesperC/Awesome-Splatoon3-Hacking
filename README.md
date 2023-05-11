@@ -89,6 +89,32 @@ Now just eject the SD card, put it into your switch, and launch into Atmosphere 
 
 Looks good! Now that you know how to install mods, lets look at how to make them now. I'm going to walk you thorugh making a basic UI image replacement mod
 
+# File Types. Just for future reference
+You might be wondering why splatoon 3 only uses `.zs` files inside the romfs folder. ZS is actually short for ZSTD Compression and all that does (that we care about) is add `.zs` to the end of files so the real file type is always behind that. Below are all the other file formats that you can find in the files. Some files are not documented here yet because i dont have the knowledge about them
+
+- `.zs` ZSTD compression used throughout the game files.
+
+- `.bfres` 3D model file containing Models, Textures, Animations, Materials and more. as of now, the encryption keeps us from being able to replace everything besides textures.
+
+- `.pack` Quite literally a package containing many other files. There is really only 1 .pack file that we will go through because it controls most of everything. but that's for later. Usually contains game parameters
+
+- `.sarc` most .sarc files are the language files located in /Mals. Usually contains Message Binary Text files (.msbt) 
+  - `.msbt` Contains text that the game uses for each language file. Can be opened in toolbox but needs another program like Kuriimu to be able to edit and save
+
+- `.bfarc` File containing font files located in /Font (they can be ripped and installed like normal fonts too)
+
+- `.bgyml`, `.gyml`, `.byml`, Types of YAML files. Usually contain defining properties.
+
+- `.bntx` Contains an image(s). Most are found in /UI/Icon.
+
+- `.blarc` Layout file that tells the game how to display UI elements (contains a .bntx file for textures).
+  - `.bflyt` Part of the layout that tells the game how and where to place/animate UI images on screen
+  - `.bflan` Animation file for layout file
+
+- `.bars` File containing game audio. Not usable in switch toolbox but still editable with other programs but we will get to that later.
+  - `.bwav` Binary WAV file. Usually nest inside a .bars file but can also be found in /Sound/Resource/Stream.
+  
+
 # Your First Mod (Tutorial)
 
 Please ignore the inconsistency of the OS in the screenshots. Some of this was made on my school laptop that administration refuses to upgrade to windows 11
@@ -111,7 +137,7 @@ This may look impossible to search through but its quite easy. Once you get more
 8. Select Portable Graphics Network if it isnt selected by default.
 9. Uncheck the top 3 options but keep the bottom one checked
 
-  <img width="182" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e755ec24-e3f1-4c76-980d-d7d5fd7174bd">
+<img width="182" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e755ec24-e3f1-4c76-980d-d7d5fd7174bd">
 
 Click Ok and wait for it to finish. Its going to look like its having a seizure but thats just it opening and closing a progress bar window for every single texture it exports.
 
@@ -167,29 +193,185 @@ Steps 26 - 28 can be skipped if you downloaded my Comet Range Blaster mod or any
 
 You just made a mod to replace that badge! As you can see, LayeredFS replaces only the files given to it meaning you need to recreate the directory for any files you want to replace in romfs. If you're up for a challenge, try to make a mod that replaces a banner. It's the same process but different folders and images. Remember tha banner folder is called `Npl`
 
-# File Types and Folder Structures
-You might be wondering why splatoon 3 only uses `.zs` files inside the romfs folder. ZS is actually short for ZSTD Compression and all that does (that we care about) is add `.zs` to the end of files so the real file type is always behind that. Below are all the other file formats that you can find in the files. Some files are not documented here yet because i dont have the knowledge about them
+# Replacing Model Textures
+Lets do one more harmless mod before we get into the fun stuff.
 
-- `.zs` ZSTD compression used throughout the game files.
+1. Go into /Model and search for "Wmn". this will filter all results to only show you model files for main weapons
 
-- `.bfres` 3D model file containing Models, Textures, Animations, Materials and more. as of now, the encryption keeps us from being able to replace everything besides textures.
+However, these arent images so we cant use our previous method for trying to figure out which is which although soon enough you'll have all the main, sub, and special internal names memorized. For now here is a list on which is which. This is also the order they should appear in your files
 
-- `.pack` Quite literally a package containing many other files. There is really only 1 .pack file that we will go through because it controls most of everything. but that's for later. Usually contains game parameters
+This list is as of Fresh Season 2023
 
-- `.sarc` most .sarc files are the language files located in /Mals. Usually contains Message Binary Text files (.msbt) 
-  - `.msbt` Contains text that the game uses for each language file. Can be opened in toolbox but needs another program like Kuriimu to be able to edit and save
+`Blaster_Coop` Grizzco Blaster
 
-- `.bfarc` File containing font files located in /Font (they can be ripped and installed like normal fonts too)
+`Blaster_Light` Rapid Blaster + Rapid Blaster Pro
 
-- `.bgyml`, `.gyml`, `.byml`, Types of YAML files. Usually contain defining properties.
+`Blaster_Light_Cstm01` Rapid Blaster Deco
 
-- `.bntx` Contains an image(s). Most are found in /UI/Icon.
+`Blaster_LightShort` Clash Blaster
 
-- `.blarc` Layout file that tells the game how to display UI elements (contains a .bntx file for textures).
-  - `.bflyt` Part of the layout that tells the game how and where to place/animate UI images on screen
-  - `.bflan` Animation file for layout file
+`Blaster_LightShort_Cstm01` Clash Blaster Neo
 
-- `.bars` File containing game audio. Not usable in switch toolbox but still editable with other programs but we will get to that later.
-  - `.bwav` Binary WAV file. Usually nest inside a .bars file but can also be found in /Sound/Resource/Stream.
-  
-  
+`Blaster_Long` Range Blaster
+
+`Blaster_Middle` Blaster
+
+`Blaster_Short` Luna Blaster
+
+`Blaster_Short_Cstm01` Luna Blaster Neo
+
+`Brush_Mini` Inkbrush
+
+`Brush_Mini_Cstm01` Inkbrush Nouveau
+
+`Brush_Normal` Octobrush
+
+`Charger_Coop` Grizzco Charger
+
+`Charger_Keeper` Goo Tuber
+
+`Changer_Light` Bamboozler 14 Mk I (my beloved)
+
+`Charger_Long` E-Liter + E-Liter Scoped
+
+`Charger_LongB` Splatoon 2 E-Liter (For Amiibo)
+
+`Charger_NormalT` Splat Charger
+
+`Charger_NormalT_Cstm01` Zekkofin Charger
+
+`Charger_Pencil` Snipewriter 5H
+
+`Charger_Quick` Squiffer
+
+`Maneuver_Dual` Dualie Squelchers
+
+`Maneuver_Gallon` Glooga Dualies
+
+`Maneuver_NormalT` Splat Dualies
+
+`Maneuver_Short` Dapple Dualies
+
+`Maneuver_Short_Cstm01` Dapple Dualies Nouveau
+
+`Maneuver_Stepper` Dark Tetra Dualies
+
+`Roller_BrushNormal` Splatoon 2 Octobrush (For Amiibo)
+
+`Roller_Compact` Carbon Roller
+
+`Roller_Compact_Cstm01` Carbon Roller Deco
+
+`Roller_Heavy` Dynamo Roller
+
+`Roller_Heavy_Cstm01` Gold Dynamo Roller (Not Released)
+
+`Roller_Hunter` Flingza Roller
+
+`Roller_NormalT` Splat Roller
+
+`Roller_NormalT_Cstm01` Krak-On Splat Roller
+
+`Roller_Wide` Big Swig Roller
+
+`Saber_Coop` Grizzco Splatana
+
+`Saber_Light` Splatana Wiper
+
+`Saber_Normal` Splatana Stamper
+
+`Shelter_Compact` Undercover Brella
+
+`Shelter_Coop` Grizzco Brella
+
+`Shelter_Normal` Splat Brella
+
+`Shelter_Wide` Tenta Brella
+
+`Shooter_Blaze` Aerospray MG
+
+`Shooter_Blaze_Cstm01` Aerospray RG
+
+`Shooter_Expert` Splattershot Pro
+
+`Shooter_Expert_Cstm01` Forge Splattershot Pro
+
+`Shooter_First` Splattershot Jr.
+
+`Shooter_FirstCstm01` Custom Splattershot Jr.
+
+`Shooter_Flash` Squeezer
+
+`Shooter_Gravity` .52 Gal
+
+`Shooter_Heavy` .96 Gal
+
+`Shooter_Heavy_Cstm01` .96 Gal Deco
+
+`Shooter_Long` Jet Squelcher
+
+`Shooter_Long_Cstm01` Custom Jet Squelcher
+
+`Shooter_Msn0Lv0` Hero Shot (All 3 Phases)
+
+`Shooter_Normal` Splatoon 1 Splattershot (For Amiibo)
+
+`Shooter_NormalB` Splatoon 2 Splattershot (For Amiibo)
+
+`Shooter_NormalT` Splattershot
+
+`Shooter_QuickLong` Splattershot Nova
+
+`Shooter_Quickmiddle` N-Zap 85
+
+`Shooter_QuickMiddle_Cstm01` N-Zap 89
+
+`Shooter_RvLv0` Rival Octolong Octoshot (Hero Mode)
+
+`Shooter_Short` Sploosh-o-Matic + Splash-o-Matic
+
+`Shooter_Short_Cstm01` Sploosh-o-Matic Neo
+
+`Shooter_Short_Cstm11` Splash-o-Matic Neo
+
+`Shooter_Triple` L-3 Nozzlenose
+
+`Shooter_Triple_Cstm01` L-3 Nozzlenose D
+
+`Shooter_TripleMiddle` H-3 Nozzlenose
+
+`Slosher_Bathtub` Bloblobber
+
+`Slosher_Coop` Grizzco Slosher
+
+`Slosher_Diffusion` Tri-Slosher
+
+`Slosher_Diffusion_Cstm01` Tri-Slosher Nouveau
+
+`Slosher_Launcher`Sloshing Machine
+
+`Slosher_StrongT` Slosher
+
+`Slosher_StrongT_Cstm` Slosher Deco
+
+`Slosher_Washtub` Explosher
+
+`Spinner_Downpour` Ballpoint Splatling
+
+`Spinner_HyperT` Hydra Splatling
+
+`Spinner_QuickT` Mini Splatling
+
+`Spinner_QuickT_Cstm01` Zink Mini Splatling
+
+`Spinner_Serein` Nautilus 47
+
+`Spinner_StandardT` Heavy Splatling
+
+`Stringer_Coop` Grizzco Stringer
+
+`Stringer_Normal` Tri-Stringer
+
+`Stringer_Short` REEFLUX-450
+
+Would you believe me if I said that took 45 minutes to type out
