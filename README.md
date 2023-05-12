@@ -375,3 +375,22 @@ This list is as of Fresh Season 2023
 `Stringer_Short` REEFLUX-450
 
 Would you believe me if I said that took 45 minutes to type out
+
+2. Choose your favorite weapon and drag it into toolbox
+3. Open the file dropdown and the textures dropdown
+
+<img width="188" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/5d6ea7b9-787b-4434-b756-a1daef67d96a">
+
+For now, lets just modify the base image texture Alb. If you wanna learn about all the maps, I've made a list below this.I wouldent reccomend trying to mess with these textures yet so this is another list thats just here for future reference. Just skip to below the list if you dont care right now. 
+
+`Alb - Albedo` Base image texture. Can also be called `Diffuse`, `Diff`, or `Dif`
+`Mlt` Also a base image texture **Not to be confused with Mtl textures**
+`Tcl - Team Color` An image mask that tells specific parts of the model to be the ink color of the team and how much
+`Ao - Ambient Occlusion` Adds detail/shadows to base textures **Not to be confused with the purpose and functionality of Nrm textures**
+`Mtl - Metalness` An image mask that tells specific parts of the model to be matalic and how much
+`Rgh - Roughness` An image mask that tells specific parts of the model to have a specified roughness value
+`Nrm - Normal Map` Adds details to a model's surcace using vectors extracted from the image for very fine details without adding model geometry. They also look very pretty
+`Mfk - Secondary Normal Map` A very rare map to see paired with a model. This acts as even finer details to the model and very annoying to work with.
+`Opa - Opacity` Used to set opacity values to specific parts of the model
+
+https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65
