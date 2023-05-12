@@ -283,7 +283,7 @@ This list is as of Fresh Season 2023
 
 `Saber_Coop` Grizzco Splatana
 
-`Saber_Light` Splatana Wiper
+`Saber_Lite` Splatana Wiper
 
 `Saber_Normal` Splatana Stamper
 
