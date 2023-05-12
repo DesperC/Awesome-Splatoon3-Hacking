@@ -15,10 +15,10 @@ These are things you need get to help you on your hacking journey. These are all
 
 - [Flexlion Mod Menu](https://flexlion.github.io/)
 - [Splatoon 3 Save Editor (from flexlion)](https://flexlion.github.io/saveeditor.html)
-- [A Full Splatoon 3 Save](https://ptb.discord.com/channels/410208534861447168/830855276437438485/1081218616734793738) (you can skip this if your save already has everything you want AND you know how to export the save as a file using EdiZon) if you cant get to the file, you need to join the [Ryujinx discord server](https://discord.gg/ryujinx) to get it even if you arent using Ryujinx. It will work on both an emulator and the switch.
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox)
   - [Visual Studio (for compiling, not reccomended for beginners, completely optional)](https://visualstudio.microsoft.com/)
 - [7-Zip](https://www.7-zip.org/) I would highly reccomend that you set 7-Zip as your main archiving app so it will open .zip files by default
+- [A Full Splatoon 3 Save](https://ptb.discord.com/channels/410208534861447168/830855276437438485/1081218616734793738) (you can skip this if your save already has everything you want AND you know how to export the save as a file using EdiZon) if you cant get to the file, you need to join the [Ryujinx discord server](https://discord.gg/ryujinx) to get it even if you arent using Ryujinx. It will work on both an emulator and the switch.
 
 Below are sub-sections for programs that are specific to replacing certain aspects of the game. ***This is not a list of everything you can mod. Just a list of what mods require other programs.***
 
@@ -33,6 +33,13 @@ As of now, Splatoon 3 model replacement is not possible. The encryption on the m
 ### Text Replacement
 - [Kuriimu](https://github.com/IcySon55/Kuriimu) or [Kuriimu 2](https://github.com/FanTranslatorsInternational/Kuriimu2)
 Kuriimu 2 is a more permanant, install while Kuriimu is a lighter, portable solution.
+
+### Audio Replacement
+- [Looping Audio Converter](https://github.com/libertyernie/LoopingAudioConverter)
+- [Citric Composer](https://gota7.github.io/Citric-Composer/)
+- [Automatic BARS Patcher](https://github.com/ic-scm/automatic-bars-patcher) or [Online BARS Patcher](https://smashcustommusic.net/onlinetools/bars-patcher/)
+- [Foobar2000](https://www.foobar2000.org/) + [VGMStream](https://www.foobar2000.org/components/view/foo_input_vgmstream)
+- Audio Editor. I use [Audacity](https://www.audacityteam.org)
 
 # Dumping romfs
 ### Emulator (Beginner reccomended)
@@ -184,7 +191,7 @@ TIP: You can actually see where the file saved via the notification that pops up
 24. Copy the file and go to the game ID folder on the sd card (SD/atmosphere/contents)
 25. Enter the romfs folder
 
-Steps 26 - 28 can be skipped if you downloaded my Comet Range Blaster mod or any other mod that changes UI textures
+Steps 26 - 28 can be skipped if you previously downloaded my Comet Range Blaster mod or any other mod that changes UI textures
 
 26. Make a folder called `UI`
 27. Inside that folder, make a folder called `Icon`
