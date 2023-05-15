@@ -25,6 +25,7 @@ Below are sub-sections for programs that are specific to replacing certain aspec
 ### Texture Replacement
 - Hex Editor. Any hex editor will do. Personally, I use [HxD](https://mh-nexus.de/en/)
 - Image Editor (Duh)
+- [Blender](https://www.blender.org/) to check how the texture looks on the model
 
 ### Model Replacement
 As of now, Splatoon 3 model replacement is not possible. The encryption on the models hasnt been cracked yet but as more nintendo games start to use the same encryption, I'm sure its just a matter of time. For now, here is an incomplete list on what you WILL need because I cannot predict the future
@@ -430,13 +431,41 @@ For now, lets just modify the base image texture Alb. If you wanna learn about a
 
 Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65)
 
+4. Open the `Models` folder and export the model as a .dae (if there are multiple models, export all of them as .dae)
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c783d707-358c-485a-ad5c-c84c2c3224a6)
 
+5. Navigate to a directory you will remember. Make a new folder there to place the files in. Save inside that folder
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1e12ba1b-f9f1-4d7b-b2c6-cc567fa20e15)
 
+6. Toggle Use Old Exporter and untoggle Use Texture Channel Swaps
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/8e74a838-d132-44a1-a4db-7b31d708d17a)
 
+7. Open Blender and import the .dae (after deleting the default scene objects
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e7acea74-9225-4698-a9d9-38c95b595419)
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b580dc9e-9320-4048-bdab-3469931ad9f8)
 
+8. Adjust the edges of the editors to your liking. Then change the outliner editor to a shader editor
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/0f00fe25-9aa0-4d0d-a331-c2d539c90690)
+
+9. Set the `Specular` value of the principled BSDF node to `0.5` 
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/19224fec-741a-462c-b4c7-4b49e42b4e2d)
+
+10. For each of these image textures that your model came with, drag and drop them into the shader editor one by one. `Alb`, `Mtl`, `Nrm`, `Rgh`. these are just the bare basics to give us a preview
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/7b6c3125-4b80-4cf7-a7ec-fd95d168ce8d)
+
+11. Use `Shift` + `A` and type in "nm" or "normal map' into the text box to make a Normal Map node
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/7c872174-9f4d-484c-93bf-098992c714ab)
+
+12. This isnt a Blender tutorial so just make sure your node setup looks like this. the only things you need to look for are the things circled and the node connections
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/a111b6b0-cac8-46c6-be8c-6186846811f0)
 
