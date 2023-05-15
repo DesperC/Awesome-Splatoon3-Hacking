@@ -395,39 +395,39 @@ For now, lets just modify the base image texture Alb. If you wanna learn about a
 
 `Mlt` Also a base image texture **Not to be confused with Mtl textures**
 
-`Tcl - Team Color` An image mask that tells specific parts of the model to be the ink color of the team and how much
+`Tcl - Team Color` An image mask that tells specific parts of the model to be the ink color of the team and how much. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 `Ao - Ambient Occlusion` Adds detail/shadows to base textures **Not to be confused with the purpose and functionality of Nrm textures**
 
-`Mtl - Metalness` An image mask that tells specific parts of the model to be matalic and how much
+`Mtl - Metalness` An image mask that tells specific parts of the model to be matalic and how much. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
-`Rgh - Roughness` An image mask that tells specific parts of the model to have a specified roughness value
+`Rgh - Roughness` An image mask that tells specific parts of the model to have a specified roughness value. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 `Nrm - Normal Map` Adds details to a model's surcace using vectors extracted from the image for very fine details without adding model geometry. They also look very pretty
 
-`2cl - Ink Damage Effect` This is used to tell the game where on the model to display the enemy ink material when damage is taken
+`2cl - Ink Damage Effect` This is used to tell the game where on the model to display the enemy ink material when damage is taken. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 `Mfk - Secondary Normal Map` A very rare map to see paired with a model. This acts as even finer details to the model and very annoying to work with.
 
-`Opa - Opacity` Used to set opacity values to specific parts of the model
+`Opa - Opacity` Used to set opacity values to specific parts of the model. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
-`Emm - Emission` An image mask that tells what parts of the model need to have light emission and how strong
+`Emm - Emission` An image mask that tells what parts of the model need to have light emission and how strong. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 `Trm - Transmission` Used to emulate a subsurface scattering effect on a model. usually best to not mess with these
 
-`Thc - Thickness` Helps make the transmission look better. Always paired with a Trm texture
+`Thc - Thickness` Helps make the transmission look better. Always paired with a Trm texture. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
-`Hlt / Mac - Highlight` Used to make something very shiny.
+`Hlt / Mac - Highlight` Used to make something very shiny. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 `Rft - Lightwarp` Emulates a [Frensel Effect](https://www.3drender.com/glossary/fresneleffect.htm#:~:text=Fresnel%20Effect%20(pronounced%20"fre-,depends%20on%20the%20viewing%20angle.)) as well as the color of it
 
-`Fxm - Effect Mask` Used to mask various material specific effects.
+`Fxm - Effect Mask` Used to mask various material specific effects. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
-`Hlm - Lightwarp Effect Mask` Used to mask a lightwarp texture
+`Hlm - Lightwarp Effect Mask` Used to mask a lightwarp texture. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
-`Mlta / Mltb - Special Effects` Can be used for anything. Nothing specific.
+`Mlta / Mltb - Special Effects` Can be used for anything. Nothing specific
 
-`Mai - Skin Mask` Image mask usually used to define what part of the model is skin and what is not.
+`Mai - Skin Mask` Image mask usually used to define what part of the model is skin and what is not. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65)
 
@@ -469,3 +469,38 @@ Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/a111b6b0-cac8-46c6-be8c-6186846811f0)
 
+13. turn on material preview mode
+ <img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/876af7dd-b6c2-43ed-a159-a167b54d5018">
+
+
+14. Your model may have multiple objects and materials. If so, here is how to assign them correctly (If you dont have multiple materials then skip to step 15)
+  - Your model has multiple materials if you see more than 1 prefix in your image texture files. this screenshot shows image texture files with a total of 3 prefixes
+  <img width="839" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1cbe5a0e-4bc6-498e-837c-91d94427e2b9">
+  - For each prefix you have, there should also be a material. The material for each prefix should be on its respective object. To view all the objects, pull up the timeline window hiding at the bottom of the screen and change the clock icon to be the one labaled outliner.
+  <img width="589" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c1c225e1-2f70-44bd-9304-be9c3fce29ee">
+  - Press `Shift` + `A` to expand everything and locate everything reperesented by a triangle icon. those are your objects. Click on an object and go to the material properties
+  <img width="950" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2d8532dd-0bcd-434d-86ac-7c501f78e84b">
+- Select the material and drag in the image textures which prefixes match the material name. Then repeat above process for each
+<img width="482" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fcf60101-03e0-40da-af58-6ac55123bc35">
+
+- Your model could also have multiple models that actually use the same texture but it has a different material. If your image textures only have 1 prefix but some part of your model is still white, then assign the white model(s) the same material as the other model
+ 
+15. Change the properties editor to a UV Editor 
+ <img width="616" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2ff66f6b-992e-4608-9bda-75b2f4340201">
+
+16. Open the image you want to edit. In this case, we are only editing the Alb image
+ <img width="400" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/9b8d0372-5747-47cc-8caf-0badc5a61f48">
+
+17. Back in the viewport, select the model, press `Tab` to switch to edit mode, and press `A` to select all vertecies. Your UV editor should be filled with orange dots and lines
+ <img width="860" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b504c7bc-eaee-4cf5-a28a-a565cd0a1fce">
+
+18. In the UV editor, click the UV pannel and select Export UV Layout. You may need to scroll down the menu to see it.
+ <img width="395" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/81a2f384-a201-4e3d-8fe2-8ca3d87b298d">
+
+19. For organizational purposes, export the png file to the same place as all your image textures. Make sure to name it something that stands out
+20. Open your photo editing program. Import the Alb texture and place the exported UV layout image on top of it. Now we can see how the model displays the texture.
+21. Now go crazy. put anything you want on it. Remember not to change the size of the image though.
+TIP: Remember to repeat the above process to get the UV layout for **ALL** of the objects that use the same material and put that UV map over the first one. You'll know if multiple objects are using the same material if there is some detail that looks like it should be covered by a UV layout.
+
+22. Once done, hide the UV layout images so they dont appear in the final product. Export it as png
+23. 
