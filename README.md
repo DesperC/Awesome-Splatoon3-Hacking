@@ -1,7 +1,7 @@
 # Awesome-Splatoon3-Hacking
 repo containing resources to learn splatoon 3 hacking/modding
 
-THIS REPO IS A HUGE W.I.P. Its my side side project when i literally have nothing else to work on
+THIS REPO IS A HUGE W.I.P. and it is very unfinished. Its my side side project when i literally have nothing else to work on
 
 This will not teach you to use mods/hacks online as that is unsafe. There might be a section to using camera hacks in battle replays later but thats it ****DO NOT USE ANY OF THIS ONLINE. MAKE SURE TO SET UP YOUR HACKED SWITCH PROPERLY****
 
