@@ -91,7 +91,7 @@ Inside the zip file, go to the `romfs` folder inside the `Comet Range Blaster` f
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3ae70e5c-5905-411b-b252-b177e49fec57)
 
-Again, this will do all the replacing automatically even if you already have other mods in there.
+Again, this will do all the replacing automatically even if you already have other mods in there. It wont overwrite anything unless you have another range blaster mod installed
 
 Now just eject the SD card, put it into your switch, and launch into Atmosphere CFW again. Refer to [this guide](https://rentry.org/EristaEmuNAND#step-4) if you forgot how to do that
 
