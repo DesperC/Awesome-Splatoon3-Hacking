@@ -54,7 +54,7 @@ you can find a tutorial on how to use NX Dump Tool [here](https://suchmememanysk
 # Exporting, Editing, and Importing Save Files
 First ya gotta obtain a save file. you can get your own save file to hack **OR** download the one in the [essential downloads](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#essentials)
 
-[Download the EdiZon NRO file](https://github.com/WerWolv/EdiZon/releases/tag/v3.1.0)
+If you're going to use your own save file [download the EdiZon NRO file](https://github.com/WerWolv/EdiZon/releases/tag/v3.1.0)
 
 Once you download, visit [this tutorial](https://www.cfwaifu.com/edizon-saves/) for a full setup process
 
