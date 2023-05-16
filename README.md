@@ -208,7 +208,7 @@ Lets do one more harmless mod before we get into the fun stuff.
 
 However, these arent images so we cant use our previous method for trying to figure out which is which although soon enough you'll have all the main, sub, and special internal names memorized. For now here is a list on which is which. This is also the order they should appear in your files
 
-This list is as of Fresh Season 2023
+### This list is as of Fresh Season 2023
 
 `Blaster_Coop` Grizzco Blaster
 
@@ -534,13 +534,17 @@ TIP: Remember to repeat the above process to get the UV layout for **ALL** of th
 27. Save it as `textures.bntx` to where your model and textures are
 
 28. In toolbox, go to Tools > Compression > ZSTD > Decompress
+
 29. Find your model in the models forlder and open it
+
 30. Remove the `.zs.dec` in the name so the file extension becomes `.bfres`
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/79dd3b59-aeee-49c5-86a2-efd633ee198d)
 
 31. Save it to where you originally exported the model
+
 32. Open your hex editor. I'm using HxD
+
 33. Drag the `.bfres` file into the hex editor to open it. You should now see a bunch of random characters
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/86474eaf-3767-4eb4-8435-107afaa873be)
@@ -550,25 +554,36 @@ TIP: Remember to repeat the above process to get the UV layout for **ALL** of th
 35. Go to the `textures.bntx` tab and copy all of it (`Ctrl` + `A` then `Ctrl` + `C`)
 
 36. Go back to the Wmn_Weapon_Name`.bfres` and hit `Ctrl` + `F`
+
 37. Type in "bntx"
+
 38. Click "Search All"
+
 39. We want the line that has "BNTX" in all caps. That should always be the second line
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/f5a733bc-4c1d-4508-9bca-9ce4244b0ffe)
 
 40. Click it to go to it.
+
 41. Click Right before the highlighted portion (42 4E 54 58) right click and click "Paste Write." You should now see a lot of red text.
+
 42. Hit `Ctrl` + `S` to save it. The text should be normal now. You can close the hex editor. (A `.bak` file might have been created. Ignore it)
+
 43. Lets check if it worked. Drag the `.bfres` file into toolbox. If everything worked, you should see your textures on it now.
+
 44. Go to Tools > Compression > ZSTD > Compress
+
 45. Navigate to your folder with the `.bfres` file you just opened and select it.
+
 46. Delete the "td" at the end of `zstd` on the file. it should now read Model_Name.bfres.zs
+
 47. Now navigate to your `romfs` folder for your SD card where you keep mods for the game. Inside your `romfs` location, make a folder called "Model" if it isnt there already.
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/780d6b5e-5b70-4076-bce3-c84fd9d0f1b2)
 ignore the 485348974563 mods I have in there its not important
 
 49. Save the `.bfres.zs` inside the model folder
+
 50. Boot up the game
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/95cf45d1-afa5-4a15-b22a-21152ccd8e6e)
@@ -576,3 +591,106 @@ ignore the 485348974563 mods I have in there its not important
 Awesome! You just finished your own weapon reskin.
 
 TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
+
+# Replacing Audio
+This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to here. Otherwise follow this tutorial
+
+# Custom Kits
+Time for your first game hack. Weapon kits are stored in romfs/RSDB/`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
+
+Before we get started, here is a list of all the subs and specials that can go on weapons
+
+`SpBlower` Ink Vac
+
+`SpCastle` Kraken
+
+`SpChariot` Crab Tank
+
+`SpEnergyStand` Tacticooler
+
+`SpFirework` Super Chump
+
+`SpGachihoko` Rainmaker
+
+`SpGreatBarrier` Big Bubbler
+
+`SpInkStorm` InkStorm
+
+`SpJetpack` Inkjet
+
+`SpMicroLaser` Killer Wail 5.1
+
+`SpMultiMissile` Tenta Missiles
+
+`SpNiceBall` Booyah Bomb
+
+`SpShockSonar` Wavebreaker
+
+`SpSkewer` Reefslider
+
+`SpSuperHook` Zipcaster
+
+`SpSuperLanding` Splashdown (yes really)
+
+`SpTripleTornado` Tristrike
+
+`SpUltraShot` Trizooka
+
+`SpUltraStamp` Ultra Stamp
+
+Sub Weapons, if there are parenthesis next to a name, that tells you its second name that can be seen in the files on occasion. The second names arent too important i just put them there so you would know.
+
+`Beacon` Beacon (`Flag`)
+
+`Bomb_Curling` Curling Bomb
+
+`Bomb_Fizzy` Fizzy Bomb (`Bomb_Piyo`)
+
+`Bomb_Quick` Burst Bomb (`Bomb_Handy`)
+
+`Bomb_Robot` Autobomb (`Bomb_Robo`)
+
+`Bomb_Splash` Splat Bomb
+
+`Bomb_Suction` Suction Bomb (`Bomb_Hold`)
+
+`Bomb_Torpedo` Torpedo (`Bomb_Tako`)
+
+`LineMarker` Line Marker (`LinMarker`)
+
+`PointSensor` Point Sensor (`MarkingBall`)
+
+`PoisonMist` Toxic Mist (`DevillBall`)
+
+`SalmonBuddy` Lil' Buddy - Needs to be modified if you want to use it on a weapon
+
+`Shield` Splash Wall
+
+`Sprinkler` Take a guess
+
+`Trap` Ink Mine
+
+Alright. Now we can get to editing kits.
+
+1. Open switch toolbox and go to Tools > Compression > ZSTD > Decompress
+2. Go to your romfs dump and go inside RSDB. Select `WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
+3. Delete the ".zs.dec" at the end of the file name so you're left with ".bfres" as the extension
+4. save the file in a place so it will be easy to find.
+5. go to where you saved the file and drag it into toolbox
+6. Use [this list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023) again to find your weapon
+7. hit `Ctr` + `F` and type in the weapon codename
+8. you should see a list like this for your weapon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
