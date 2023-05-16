@@ -679,15 +679,61 @@ Alright. Now we can get to editing kits.
 5. go to where you saved the file and drag it into toolbox
 6. Use [this list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023) again to find your weapon
 7. hit `Ctr` + `F` and type in the weapon codename
-8. you should see a list like this for your weapon
+8. Find the paragraph that looks like this relating to your weapon
+<img width="667" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/23a2d883-8a23-4a45-b500-83361f70bc08">
+9. The only notable things you can change in this file are:
+  - Weapon kits
+  - Weapon Special Points
+  - What badges you get from getting 4 and 5 star on that weapon
+  - Weapon UI Values (a.e the game showing you how much range the weapon has)
+  - Weapon Call. This is a bit more complicated and is explained what it is and how to do later in the guide.
+10. Right now, we will only need to look at these 3 lines
+<img width="518" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1dce16e1-0f11-4276-9370-b8a132ec3ec4">
+Note that this isnt the correct kit for Bamboozler because i have already messed with it. Dosent change the process for changing any weapon kit though
 
+11. Lets replace the special first. Copy the special codename you want from the list above and replace the original special
 
+This is the only part of the line that needs to be fully replaced with your special
 
+<img width="494" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e9e302e7-83bb-4650-9501-d1d57da15a3b">
 
+12. Now do the same thing for the sub weapon. Again this is the only part that should be replaced 
 
+<img width="437" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c8ec91e7-a01a-433f-9461-73ec9a66bcc6">
 
+13. If you feel like it, edit the required amount of special points for the weapon. Setting it to 0 will automatically fill the special meter again after you use it
 
+<img width="143" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/09f8ba82-3738-48f9-aac7-37de715b1366">
 
+Dont worry about the `!l` thats just telling the game that its a Int32 value meaning it can store values up to 2,147,483,647
+
+14. compile it by clicking "Compile" near the top of the window
+
+<img width="297" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/49ec7fbd-24d3-4399-aa9f-9b4e2fa0e226">
+
+15. Now save it with the save icon
+
+<img width="250" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d1290a51-21b4-438e-b469-b1eec8d5774e">
+
+Finally, we need to recompress it
+
+16. go to Tools > Compression > ZSTD > Compress
+
+17. select the .byml you just saved
+
+18. delete the "td" at the end of the file name so the end of the file reads `.rstbl.byml.zs`
+
+19. navigate to the romfs folder on your sd card. Make a folder called RSDB and place the file in there
+
+20. Boot up the game
+
+Have fun with your new kit but be sure to take a little break if all that code overwhelmed you because the next tutorial will involve a lot of code as well.
+
+# Changing Weapon Functionality / Parameters
+
+This might be the most anticipated part for you. At the end of this walkthough you will be able to change almost anything about any main, sub, and special weapon.
+
+Before we get started though, you need to understand some things about how those "Niche" weapons work.
 
 
 
