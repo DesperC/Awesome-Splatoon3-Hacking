@@ -677,8 +677,8 @@ Alright. Now we can get to editing kits.
 3. Delete the ".zs.dec" at the end of the file name so you're left with ".bfres" as the extension
 4. save the file in a place so it will be easy to find.
 5. go to where you saved the file and drag it into toolbox
-6. Use [this list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023) again to find your weapon
-7. hit `Ctr` + `F` and type in the weapon codename
+6. Use [this list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023) again to find your weapon.
+7. switch to text editor and hit "Decompile." hit `Ctr` + `F` and type in the weapon codename. dont use any underscores
 8. Find the paragraph that looks like this relating to your weapon
 <img width="667" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/23a2d883-8a23-4a45-b500-83361f70bc08">
 9. The only notable things you can change in this file are:
@@ -733,7 +733,38 @@ Have fun with your new kit but be sure to take a little break if all that code o
 
 This might be the most anticipated part for you. At the end of this walkthough you will be able to change almost anything about any main, sub, and special weapon.
 
-Before we get started though, you need to understand some things about how those "Niche" weapons work.
+Right now i will just show you how to modify some very basic parameters. After this tutorial though is where everything gets more specific and i show you literally everything i know
+
+Lets change the range, damage, RNG, and fire rate of the Splattershot Nova
+
+This tutorial will have less pictures and less descriptive text for things we've already done multiple times in previous tutotials.
+
+1. Inside toolbox, lets decompress another file with ZSTD compression. You should know how to decompress and compress with ZSTD by now
+2. go to your romfs dump and open the Pack folder. Then select `Params.pack.zs`
+
+This file contains all main, sub, special weapon parameters as well as stage parameters
+
+3.  save it as `Params.pack` to a location you can find easily
+4.  open the newly saved `Params.pack` in toolbox
+5.  Hit the search button and search for ShooterQuickLong. To find splattershot nova. however this brings up 2 files
+
+<img width="107" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/6b72cce2-f1b0-4ee2-bf7b-95f0b0ef3a21">
+
+<img width="304" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e33eb047-ff30-4360-8afc-baad4aae8a06">
+
+We always want the one that dosent have "Coop" in the name. Coop means Co-op which means salmon run. any file in Params.pack with Coop in the name only changes specific parts of the weapon in salmon run so we dont care about it.
+
+6. Click the file without Coop in the name to locate it in the file view. Close the search window now
+7. double click the highlighted file.
+8. switch to text editor and hit "Decompile"
+
+Lets start by giving it 100 damage just for the hell of it.
+
+9. Locate the line that says DamageParam. Should be at line 15
+10. ValueMax and ValueMin are the only values we care about 
+11. <img width="707" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b1e00bfe-f203-46a3-bc76-d46cc04b2d1e">
+
+
 
 
 
