@@ -595,6 +595,89 @@ TIP : You can combine these 2 modding tecniques that you've learned so far to cr
 # Replacing Audio
 This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to here. Otherwise follow this tutorial
 
+# Editing Text.
+This is how i made my Google Translate Mod. Hours of copying text from the game and putting it through translate a million times. Cant beleive im gonna do the same thing for side order
+
+Anyways enough of my crippling anxiety, lets start by downloading the required editor
+
+I would reccomend setting Kuriimu as your default .msbt editing program so you dont need to drag the file in the program to open it every time.
+
+1. In your romds dump, open the Mals folder. i'm assuming youre language is english so we want this file right here
+
+<img width="224" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1d31f2c2-80d4-4efc-9c39-24d676f2721e">
+
+2. Drag the file into toolbox to open it. there are a ton of .msbt files in here so here is a small list of where important ones are as well as important prefixes
+
+any files starting with `msn` or `mission` or any files located inside the `LogicMsg` folder or any files in `CommonMsg/Mission` relate to hero mode
+
+any files starting with `vs` or `versus` or `lobby` relate to multiplayer
+
+you can find the splashtag titles files in `CommonMsg/Byname`
+
+weapon names are in `CommonMsg/Weapon` 
+
+try looking at the glossary file in `CommonMsg/Glossary.msbt` if you want to find names of characters
+
+gear names can be found at `CommonMsg/Gear`
+
+text relating to salmon run is any file that has `Coop` or `LobbyCoop` in the name
+
+if you want to edit what Deep Cut says on the news, search for any files starting with `News`
+
+Toolbox cant edit the msbt files so we need to export them to edit them.
+
+3. Find any `.msbt` files you want. right click on them and click Export Raw Data
+
+<img width="305" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/abb00fc6-c6d7-4173-8fc5-d071411ac62a">
+
+4. Save the file to a place you will remember
+
+5. open Kuriimu then open the .msbt file with Kuriimu by dragging it over
+
+6. click yes to keep a backup. this is very helpful for multiple reasons then just if you need to revert
+
+<img width="295" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/9724c759-6e35-438c-acbb-95893a3eb744">
+
+7. Click this icon here to get a preview inside the text entries
+
+<img width="249" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e6a1cb3c-c657-4cbf-8087-5ecf5f25cfdb">
+
+Dont worry if the entry names are gibberish. We never need to worry about names
+
+remember you can always use these 2 options to find something(s) specific (first one) or find and replace something(s) specific (second one)
+
+<img width="128" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/cf9ac1e0-ef99-4658-8414-9b0b806417db">
+
+8. Once you edit everything you want to edit, do `Ctrl` + `S` to save the file.
+
+9. back in toolbox, right click the file you just exported but now click Replace Raw Data
+
+<img width="349" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/0258b0d8-5105-4fec-bafb-3c6ff27b77dd">
+
+10. Navigate to the `.msbt` file you edited with Kuriimu. You should also see a `.bak` file there. ignore it
+
+11. select the `.msbt` file
+
+12. back in toolbox, double click the file you just replaced to open a preview of it to make sure it has your edits. toolbox can preview msbt files but it cant edit them.
+
+<img width="454" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/11143db9-66b6-47fa-88d8-70a99814a37a">
+
+13. Close the pop up window and save the file 
+
+<img width="142" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c4973c0c-a84e-4e64-ae3f-60f862ef4ff8">
+
+14. Click Yes to the promt
+
+<img width="148" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/f12a659b-2218-4a5a-a392-6499eedb39e9">
+
+15. Copy the `.sarc` file we just edited and navigate to your SD card romfs directory. Make a new folder called Mals and paste the file in there
+
+PUT PICTURE
+
+16. Boot up the game
+
+Text editing is one of the simplest but most effective ways of modding in my opinion. I really enjoy making characters just say the dumbest things.
+
 # Custom Kits
 Time for your first game hack. Weapon kits are stored in romfs/RSDB/`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
 
@@ -845,3 +928,11 @@ Around line 19 you should find a section called `PaintParam` thee give you a ton
 ### Dualie Rolls
 
 ### Object Place Number
+
+# Misc
+
+### Ink Splatter Textures
+
+### The Layout Folder
+
+### Stage Editing
