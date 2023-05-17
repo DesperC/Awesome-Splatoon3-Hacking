@@ -525,7 +525,7 @@ TIP: Remember to repeat the above process to get the UV layout for **ALL** of th
 
 25. Once ready, go back to toolbox and replace the Alb image on the model. The default settings in the window that pops up should be fine
 
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b6dac397-22ae-4173-93c1-c65535158254)
+<img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/dae238af-b5d9-4d09-b7dd-45052ed0588e">
 
 26. Right click the `Textures` folder and click export
 
@@ -789,3 +789,34 @@ Lets start by giving it 100 damage just for the hell of it.
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d0844ef8-1f92-4672-b676-60ac8be23e4b)
 
 20. Boot up the game
+
+Nova is finally a functioning weapon. 
+
+and thats basically everything about splatoon 3 modding. the next sections and sub sections of the tutorial are just to be used as reference points for how to do specific things. think of it as the Splatoon 3 API Documentation.
+
+# Specific Weapon Parameters
+This section will have sub sections that all focus on telling you where and how to modify more specific weapon functionality
+
+### Ink Consumption
+Down in the `WeaponParam` section for your weapon you will find a variable called `InkConsume` this variable tells the game how much ink to remove from the tank per shot.
+
+### Paint Parameters
+Around line 19 you should find a section called `PaintParam` thee give you a ton of customization for how much paint the weapon does. Multiplying all the values by 10 gives you some really fun results.
+
+### RNG
+
+### Range
+
+### Damage
+
+### Fire Rate
+
+### Chargers - Homemade Aimbot
+
+### Chargers - Increase Air Charge Speed
+
+### Chargers - Force Scope, Divided Shots, and/or Charge Holding
+
+### Dualie Rolls
+
+### Object Place Number
