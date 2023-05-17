@@ -673,22 +673,39 @@ Sub Weapons, if there are parenthesis next to a name, that tells you its second 
 Alright. Now we can get to editing kits.
 
 1. Open switch toolbox and go to Tools > Compression > ZSTD > Decompress
+
 2. Go to your romfs dump and go inside RSDB. Select `WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
+
 3. Delete the ".zs.dec" at the end of the file name so you're left with ".bfres" as the extension
+
 4. save the file in a place so it will be easy to find.
+
 5. go to where you saved the file and drag it into toolbox
+
 6. Use [this list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023) again to find your weapon.
+
 7. switch to text editor and hit "Decompile." hit `Ctr` + `F` and type in the weapon codename. dont use any underscores
+
 8. Find the paragraph that looks like this relating to your weapon
+
 <img width="667" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/23a2d883-8a23-4a45-b500-83361f70bc08">
+
 9. The only notable things you can change in this file are:
-  - Weapon kits
-  - Weapon Special Points
-  - What badges you get from getting 4 and 5 star on that weapon
-  - Weapon UI Values (a.e the game showing you how much range the weapon has)
-  - Weapon Call. This is a bit more complicated and is explained what it is and how to do later in the guide.
+
+- Weapon kits
+
+- Weapon Special Points
+
+- What badges you get from getting 4 and 5 star on that weapon
+
+- Weapon UI Values (a.e the game showing you how much range the weapon has)
+
+- Weapon Call. This is a bit more complicated and is explained what it is and how to do later in the guide.
+
 10. Right now, we will only need to look at these 3 lines
+
 <img width="518" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1dce16e1-0f11-4276-9370-b8a132ec3ec4">
+
 Note that this isnt the correct kit for Bamboozler because i have already messed with it. Dosent change the process for changing any weapon kit though
 
 11. Lets replace the special first. Copy the special codename you want from the list above and replace the original special
@@ -740,12 +757,15 @@ Lets change the range, damage, RNG, and fire rate of the Splattershot Nova
 This tutorial will have less pictures and less descriptive text for things we've already done multiple times in previous tutotials.
 
 1. Inside toolbox, lets decompress another file with ZSTD compression. You should know how to decompress and compress with ZSTD by now
+
 2. go to your romfs dump and open the Pack folder. Then select `Params.pack.zs`
 
 This file contains all main, sub, special weapon parameters as well as stage parameters
 
 3.  save it as `Params.pack` to a location you can find easily
+
 4.  open the newly saved `Params.pack` in toolbox
+
 5.  Hit the search button and search for ShooterQuickLong. To find splattershot nova. however this brings up 2 files
 
 <img width="107" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/6b72cce2-f1b0-4ee2-bf7b-95f0b0ef3a21">
@@ -755,17 +775,21 @@ This file contains all main, sub, special weapon parameters as well as stage par
 We always want the one that dosent have "Coop" in the name. Coop means Co-op which means salmon run. any file in Params.pack with Coop in the name only changes specific parts of the weapon in salmon run so we dont care about it.
 
 6. Click the file without Coop in the name to locate it in the file view. Close the search window now
+
 7. double click the highlighted file.
+
 8. switch to text editor and hit "Decompile"
 
 Lets start by giving it 100 damage just for the hell of it.
 
 9. Locate the line that says DamageParam. Should be at line 15
+
 10. ValueMax and ValueMin are the only values we care about 
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3f69a8f3-b325-4806-b846-fc88b141207f)
 
 11. 240 and 120 are the damage numbers multiplied by 10. the extra zero is in case a decimal value is needed. so lets set the Max and Min damage to 1000 to make it do 100 damage no matter what.
+
 12. Lets also give nova perfect RNG. To do this, scroll down to the bottom section `WeaponParam`
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4fd0b12c-24ee-442a-924e-0151b75ae3b9)
@@ -780,6 +804,7 @@ Lets start by giving it 100 damage just for the hell of it.
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa70d5a0-4ef8-4cae-8843-8a4df3d4853f)
 
 16. click Compile at the top
+
 17. once you save that file, make sure to save the Params.pack file too
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b00f54ea-b1f0-455c-a2c0-421ab5982f02)
@@ -788,7 +813,7 @@ Lets start by giving it 100 damage just for the hell of it.
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d0844ef8-1f92-4672-b676-60ac8be23e4b)
 
-20. Boot up the game
+29. Boot up the game
 
 Nova is finally a functioning weapon. 
 
