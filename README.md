@@ -762,12 +762,30 @@ Lets start by giving it 100 damage just for the hell of it.
 
 9. Locate the line that says DamageParam. Should be at line 15
 10. ValueMax and ValueMin are the only values we care about 
-11. <img width="707" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b1e00bfe-f203-46a3-bc76-d46cc04b2d1e">
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3f69a8f3-b325-4806-b846-fc88b141207f)
 
+11. 240 and 120 are the damage numbers multiplied by 10. the extra zero is in case a decimal value is needed. so lets set the Max and Min damage to 1000 to make it do 100 damage no matter what.
+12. Lets also give nova perfect RNG. To do this, scroll down to the bottom section `WeaponParam`
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4fd0b12c-24ee-442a-924e-0151b75ae3b9)
 
+13. RNG is under the 2 variables that contain `DegSwerve` Jump_DegSwerve is jump RNG and Stand_DegSwerve is ground RNG. set them both to 0
 
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3a20c4bc-2cec-49c0-aa3b-9442c2587d87)
 
+14. now on to fire rate. the `RepeatFrame` variable. Set it to 1 to make it fire every frame. i dont know what setting it to 0 will do and im too scared to try
 
+15. Finally, range. scroll up to the line called `MoveParam` (should be line 18) and find the variable called `SpawnSpeed`. this is the range. but because its so small, just adding 1 or 2 will make it shoot across the map. although you can set this as high or as low as you want. Set the highlighted value on this line to a larger number
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa70d5a0-4ef8-4cae-8843-8a4df3d4853f)
 
+16. click Compile at the top
+17. once you save that file, make sure to save the Params.pack file too
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b00f54ea-b1f0-455c-a2c0-421ab5982f02)
+
+18. compress the saved file with ZSTD. and put your newly created `Params.pack.zs` inside the Pack folder in your SD card romfs directory
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d0844ef8-1f92-4672-b676-60ac8be23e4b)
+
+20. Boot up the game
