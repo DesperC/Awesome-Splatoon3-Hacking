@@ -592,13 +592,10 @@ Awesome! You just finished your own weapon reskin.
 
 TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
 
-# Replacing Audio
-This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to here. Otherwise follow this tutorial
-
-# Editing Text.
+# Replacing Text.
 This is how i made my Google Translate Mod. Hours of copying text from the game and putting it through translate a million times. Cant beleive im gonna do the same thing for side order
 
-Anyways enough of my crippling anxiety, lets start by downloading the required editor
+Anyways enough of my crippling anxiety, lets start by [downloading the required editor](https://github.com/DesperC/Awesome-Splatoon3-Hacking?scrlybrkr=c562aa65#text-replacement)
 
 I would reccomend setting Kuriimu as your default .msbt editing program so you dont need to drag the file in the program to open it every time.
 
@@ -677,6 +674,9 @@ PUT PICTURE
 16. Boot up the game
 
 Text editing is one of the simplest but most effective ways of modding in my opinion. I really enjoy making characters just say the dumbest things.
+
+# Replacing Audio
+This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to here. Otherwise follow this tutorial
 
 # Custom Kits
 Time for your first game hack. Weapon kits are stored in romfs/RSDB/`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
