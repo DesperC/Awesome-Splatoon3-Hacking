@@ -903,13 +903,13 @@ Nova is finally a functioning weapon.
 and thats basically everything about splatoon 3 modding. the next sections and sub sections of the tutorial are just to be used as reference points for how to do specific things. think of it as the Splatoon 3 API Documentation.
 
 # Specific Weapon Parameters
-This section will have sub sections that all focus on telling you where and how to modify more specific weapon functionality
+This section will have sub sections that all focus on telling you where and how to modify more specific weapon functionality. general functions of a class will not be covered as they are either unimportant or easy to understand yourself.
 
 ### Ink Consumption
-Down in the `WeaponParam` section for your weapon you will find a variable called `InkConsume` this variable tells the game how much ink to remove from the tank per shot.
+Down in the `WeaponParam` section for your weapon you will find a variable called `InkConsume` this variable tells the game how much ink to remove from the tank **per shot**.
 
 ### Paint Parameters
-Around line 19 you should find a section called `PaintParam` thee give you a ton of customization for how much paint the weapon does. Multiplying all the values by 10 gives you some really fun results.
+find a section called `PaintParam` these give you a ton of customization for how much paint the weapon does. Multiplying all the values by 10 gives you some really fun results.
 
 ### RNG
 
@@ -925,7 +925,37 @@ Around line 19 you should find a section called `PaintParam` thee give you a ton
 
 ### Chargers - Force Scope, Divided Shots, and/or Charge Holding
 
-### Dualie Rolls
+### Dualies - Roll Count
+
+### Dualies - Shoot while Rolling
+
+### Dualies - End Lag
+
+### Shooters - L-3 and H-3 Shooting (3 Shots)
+
+### Shooters - Squeezer Shooting (Semi-Auto)
+
+### Brellas - Undercover Brella Shooting (Keep Sheild)
+
+### Splatanas - 1-Shot Radius
+
+### Brushes - Rolling Ink Resistance
+
+### Brushes - Roll Speed
+
+### Blasters - Intensify Action Reduce RNG
+
+### Blasters - Explosion Radius
+
+### Splatlings - Recharge while Shooting
+
+### Stringers - Charge Hold
+
+### Stringers - Jump Tilt Angle
+
+### Stringers - Guide Trajectory
+
+### Bloblobber - Blob Parameters
 
 ### Object Place Number
 
@@ -936,3 +966,11 @@ Around line 19 you should find a section called `PaintParam` thee give you a ton
 ### The Layout Folder
 
 ### Stage Editing
+Stage editing is pretty complex but right now, its not even possible with most of the stages. toolbox kinda dosent compile some of the byml files correctly so until thats fixed, dont worry about it
+
+### Replacing Fonts
+
+
+### Closing Notes
+
+
