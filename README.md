@@ -231,7 +231,7 @@ Lets do one more harmless mod before we get into the fun stuff.
 
 However, these arent images so we cant use our previous method for trying to figure out which is which although soon enough you'll have all the main, sub, and special internal names memorized. For now here is a list on which is which. This is also the order they should appear in your files
 
-### This list is as of Fresh Season 2023
+### [This list is as of Fresh Season 2023](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#list-of-weapons-as-of-fresh-season-2023)
 
 2. Choose your favorite weapon and drag it into toolbox
 3. Open the file dropdown and the textures dropdown
