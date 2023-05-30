@@ -28,8 +28,7 @@ Below are sub-sections for programs that are specific to replacing certain aspec
 - [Blender](https://www.blender.org/) to check how the texture looks on the model
 
 ### Model Replacement
-As of now, Splatoon 3 model replacement is not possible. The encryption on the models hasnt been cracked yet but as more nintendo games start to use the same encryption, I'm sure its just a matter of time. For now, here is an incomplete list on what you WILL need because I cannot predict the future
-- [Blender](https://www.blender.org/) or some other 3D Editor
+- [Blender](https://www.blender.org/) or some other 3D Editor and good knowledge of how to use it. Model replacement is for people who know how to use the program. basically, 3d model experience required
 
 ### Text Replacement
 - [Kuriimu](https://github.com/IcySon55/Kuriimu) or [Kuriimu 2](https://github.com/FanTranslatorsInternational/Kuriimu2)
@@ -43,13 +42,11 @@ Kuriimu 2 is a more permanant, install while Kuriimu is a lighter, portable solu
 - Audio Editor. I use [Audacity](https://www.audacityteam.org)
 
 # Dumping romfs
-### Emulator (Beginner reccomended)
+### Emulator (Beginner reccomended) (Required if you arent using switch)
 (Make sure you have any updates/DLC you want installed as an NSP) Right click the game and click "Dump RomFS" **Make sure to remember where you dumped these files or put them in a place you will remember.**
 
 ### Switch (Not for beginners)
-Use [Nx Dump Tool](https://github.com/DarkMatterCore/nxdumptool/releases/tag/v1.1.15) to dump the romfs of the game
-
-you can find a tutorial on how to use NX Dump Tool [here](https://suchmememanyskill.github.io/guides/switchdumpguide/)
+Not typed out yet. use LockpickRCM to obtain your keys files and Nxdumptool to dump the game files. explainataions on all of this will come soon
 
 # Exporting, Editing, and Importing Save Files
 First ya gotta obtain a save file. you can get your own save file to hack **OR** download the one in the [essential downloads](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#essentials)
@@ -669,14 +666,20 @@ remember you can always use these 2 options to find something(s) specific (first
 
 15. Copy the `.sarc` file we just edited and navigate to your SD card romfs directory. Make a new folder called Mals and paste the file in there
 
-PUT PICTURE
-
 16. Boot up the game
+
+NOTE: You will need to 
 
 Text editing is one of the simplest but most effective ways of modding in my opinion. I really enjoy making characters just say the dumbest things.
 
+# Editing UI Layouts
+
+Not started yet but you can use when ive already taught you to edit the files in the Layout folder
+
 # Replacing Audio
 This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to here. Otherwise follow this tutorial
+
+cant be bothered to write out my own right now. might do this last. for now, refer to [this tutorial](https://gamebanana.com/tuts/15422)
 
 # Custom Kits
 Time for your first game hack. Weapon kits are stored in romfs/RSDB/`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
