@@ -236,7 +236,7 @@ However, these arent images so we cant use our previous method for trying to fig
 2. Choose your favorite weapon and drag it into toolbox
 3. Open the file dropdown and the textures dropdown
 
-For now, lets just modify the base image texture Alb. If you wanna learn about all the maps, I've made a list below this. I wouldent reccomend trying to mess with these textures yet so this is another list thats just here for future reference. Just skip to below the list if you dont care right now. 
+For now, lets just modify the base image texture Alb. If you wanna learn about all the maps, I've made a list below this. I wouldent reccomend trying to mess with these textures yet so this is another list thats just here for future reference. Just skip to below [the list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#texture-names) if you dont care right now. 
 
 <img width="188" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/5d6ea7b9-787b-4434-b756-a1daef67d96a">
 
