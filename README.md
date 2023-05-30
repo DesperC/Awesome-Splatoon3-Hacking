@@ -19,6 +19,7 @@ This will not teach you to use mods/hacks online as that is unsafe. There might 
 - Exporting, Editing, and Importing Save Files
 - How to use/install mods
 - File Types. Just for future reference
+- Your First Mod (Tutorial)
 
 # Getting Started
 You're gonna need a modded switch unless you would rather use an emulator. Tutorials can be found here. If you're modding a switch with a copy of Splatoon 3 already on it, good for you. If you're modding a switch with no copy of Splatoon 3 I reccomend buying a legit copy. If you're using an emulator, follow the link to setting up an emulator. It will show you how to get games.
@@ -207,18 +208,23 @@ TIP: You can actually see where the file saved via the notification that pops up
 <img width="305" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/a711d13f-faad-4250-930a-5d1997bb52a2">
 
 24. Copy the file and go to the game ID folder on the sd card (SD/atmosphere/contents)
+
 25. Enter the romfs folder
 
-Steps 26 - 28 can be skipped if you previously downloaded my Comet Range Blaster mod or any other mod that changes UI textures
-
 26. Make a folder called `UI`
+
 27. Inside that folder, make a folder called `Icon`
+
 28. Inside that folder, make a folder called `Badge`
+
 29. Paste the file inside the `Badge` folder
 
 You just made a mod to replace that badge! As you can see, LayeredFS replaces only the files given to it meaning you need to recreate the directory for any files you want to replace in romfs. If you're up for a challenge, try to make a mod that replaces a banner. It's the same process but different folders and images. Remember tha banner folder is called `Npl`
 
-# Replacing Model Textures
+# Replacing Model Textures (Old)
+
+I feel like leaving this method in might be useful to someone but now, its outdated. for the in-date tutorial, check here
+
 Lets do one more harmless mod before we get into the fun stuff.
 
 1. Go into /Model and search for "Wmn". this will filter all results to only show you model files for main weapons
@@ -227,6 +233,176 @@ However, these arent images so we cant use our previous method for trying to fig
 
 ### This list is as of Fresh Season 2023
 
+2. Choose your favorite weapon and drag it into toolbox
+3. Open the file dropdown and the textures dropdown
+
+For now, lets just modify the base image texture Alb. If you wanna learn about all the maps, I've made a list below this. I wouldent reccomend trying to mess with these textures yet so this is another list thats just here for future reference. Just skip to below the list if you dont care right now. 
+
+<img width="188" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/5d6ea7b9-787b-4434-b756-a1daef67d96a">
+
+4. Open the `Models` folder and export the model as a .dae (if there are multiple models, export all of them as .dae)
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c783d707-358c-485a-ad5c-c84c2c3224a6)
+
+5. Navigate to a directory you will remember. Make a new folder there to place the files in. Save inside that folder
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1e12ba1b-f9f1-4d7b-b2c6-cc567fa20e15)
+
+6. Toggle Use Old Exporter and untoggle Use Texture Channel Swaps
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/8e74a838-d132-44a1-a4db-7b31d708d17a)
+
+7. Open Blender and import the .dae (after deleting the default scene objects
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e7acea74-9225-4698-a9d9-38c95b595419)
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b580dc9e-9320-4048-bdab-3469931ad9f8)
+
+8. Adjust the edges of the editors to your liking. Then change the outliner editor to a shader editor
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/0f00fe25-9aa0-4d0d-a331-c2d539c90690)
+
+9. Set the `Specular` value of the principled BSDF node to `0.5` 
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/19224fec-741a-462c-b4c7-4b49e42b4e2d)
+
+10. For each of these image textures that your model came with, drag and drop them into the shader editor one by one. `Alb`, `Mtl`, `Nrm`, `Rgh`. these are just the bare basics to give us a preview
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/7b6c3125-4b80-4cf7-a7ec-fd95d168ce8d)
+
+11. Use `Shift` + `A` and type in "nm" or "normal map' into the text box to make a Normal Map node
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/7c872174-9f4d-484c-93bf-098992c714ab)
+
+12. This isnt a Blender tutorial so just make sure your node setup looks like this. the only things you need to look for are the things circled and the node connections
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/a111b6b0-cac8-46c6-be8c-6186846811f0)
+
+13. turn on material preview mode
+
+ <img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/876af7dd-b6c2-43ed-a159-a167b54d5018">
+
+
+14. Your model may have multiple objects and materials. If so, here is how to assign them correctly (If you dont have multiple materials then skip to step 15)
+  - Your model has multiple materials if you see more than 1 prefix in your image texture files. this screenshot shows image texture files with a total of 3 prefixes
+  
+  <img width="839" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1cbe5a0e-4bc6-498e-837c-91d94427e2b9">
+  
+  - For each prefix you have, there should also be a material. The material for each prefix should be on its respective object. To view all the objects, pull up the timeline window hiding at the bottom of the screen and change the clock icon to be the one labaled outliner.
+  
+  <img width="589" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c1c225e1-2f70-44bd-9304-be9c3fce29ee">
+  
+  - Press `Shift` + `A` to expand everything and locate everything reperesented by a triangle icon. those are your objects. Click on an object and go to the material properties
+  
+  <img width="950" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2d8532dd-0bcd-434d-86ac-7c501f78e84b">
+  
+- Select the material and drag in the image textures which prefixes match the material name. Then repeat above process for each
+
+<img width="482" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fcf60101-03e0-40da-af58-6ac55123bc35">
+
+- Your model could also have multiple models that actually use the same texture but it has a different material. If your image textures only have 1 prefix but some part of your model is still white, then assign the white model(s) the same material as the other model
+ 
+15. Change the properties editor to a UV Editor
+ 
+ <img width="616" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2ff66f6b-992e-4608-9bda-75b2f4340201">
+
+16. Open the image you want to edit. In this case, we are only editing the Alb image
+
+ <img width="400" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/9b8d0372-5747-47cc-8caf-0badc5a61f48">
+
+17. Back in the viewport, select the model, press `Tab` to switch to edit mode, and press `A` to select all vertecies. Your UV editor should be filled with orange dots and lines
+
+ <img width="860" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b504c7bc-eaee-4cf5-a28a-a565cd0a1fce">
+
+18. In the UV editor, click the UV pannel and select Export UV Layout. You may need to scroll down the menu to see it.
+
+ <img width="395" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/81a2f384-a201-4e3d-8fe2-8ca3d87b298d">
+
+19. For organizational purposes, export the png file to the same place as all your image textures. Make sure to name it something that stands out
+
+20. Open your photo editing program. Import the Alb texture and place the exported UV layout image on top of it. Now we can see how the model displays the texture.
+
+21. Now go crazy. put anything you want on it. Remember not to change the size of the image though.
+
+TIP: Remember to repeat the above process to get the UV layout for **ALL** of the objects that use the same material and put that UV map over the first one. You'll know if multiple objects are using the same material if there is some detail that looks like it should be covered by a UV layout.
+
+22. Once done, hide the UV layout images so they dont appear in the final product. Export it in the same place as the original Alb image to replace it. we wont need it anymore
+
+23. Back in the shader editor, click on the Alb node. then hit `N` to bring up a panel. Go to the `Node` section on that panel. Click the refresh button to refresh the image texture and make sure its to your liking
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/ca50a936-8e3d-460b-b504-b8a09a30255a)
+
+25. Once ready, go back to toolbox and replace the Alb image on the model. The default settings in the window that pops up should be fine
+
+<img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/dae238af-b5d9-4d09-b7dd-45052ed0588e">
+
+26. Right click the `Textures` folder and click export
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e86377bc-3ea5-4f78-bb49-c98a1943e947)
+
+27. Save it as `textures.bntx` to where your model and textures are
+
+28. In toolbox, go to Tools > Compression > ZSTD > Decompress
+
+29. Find your model in the models forlder and open it
+
+30. Remove the `.zs.dec` in the name so the file extension becomes `.bfres`
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/79dd3b59-aeee-49c5-86a2-efd633ee198d)
+
+31. Save it to where you originally exported the model
+
+32. Open your hex editor. I'm using HxD
+
+33. Drag the `.bfres` file into the hex editor to open it. You should now see a bunch of random characters
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/86474eaf-3767-4eb4-8435-107afaa873be)
+
+34. Do the same for `textures.bntx` it should open in a new tab
+
+35. Go to the `textures.bntx` tab and copy all of it (`Ctrl` + `A` then `Ctrl` + `C`)
+
+36. Go back to the Wmn_Weapon_Name`.bfres` and hit `Ctrl` + `F`
+
+37. Type in "bntx"
+
+38. Click "Search All"
+
+39. We want the line that has "BNTX" in all caps. That should always be the second line
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/f5a733bc-4c1d-4508-9bca-9ce4244b0ffe)
+
+40. Click it to go to it.
+
+41. Click Right before the highlighted portion (42 4E 54 58) right click and click "Paste Write." You should now see a lot of red text.
+
+42. Hit `Ctrl` + `S` to save it. The text should be normal now. You can close the hex editor. (A `.bak` file might have been created. Ignore it)
+
+43. Lets check if it worked. Drag the `.bfres` file into toolbox. If everything worked, you should see your textures on it now.
+
+44. Go to Tools > Compression > ZSTD > Compress
+
+45. Navigate to your folder with the `.bfres` file you just opened and select it.
+
+46. Delete the "td" at the end of `zstd` on the file. it should now read Model_Name.bfres.zs
+
+47. Now navigate to your `romfs` folder for your SD card where you keep mods for the game. Inside your `romfs` location, make a folder called "Model" if it isnt there already.
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/780d6b5e-5b70-4076-bce3-c84fd9d0f1b2)
+ignore the 485348974563 mods I have in there its not important
+
+49. Save the `.bfres.zs` inside the model folder
+
+50. Boot up the game
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/95cf45d1-afa5-4a15-b22a-21152ccd8e6e)
+
+Awesome! You just finished your own weapon reskin.
+
+
+
+# Replacing Textures UNFINISHED
+### List of weapons as of Fresh Season 2023
 `Blaster_Coop` Grizzco Blaster
 
 `Blaster_Light` Rapid Blaster + Rapid Blaster Pro
@@ -401,13 +577,9 @@ However, these arent images so we cant use our previous method for trying to fig
 
 Would you believe me if I said that took 45 minutes to type out
 
-2. Choose your favorite weapon and drag it into toolbox
-3. Open the file dropdown and the textures dropdown
-
-<img width="188" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/5d6ea7b9-787b-4434-b756-a1daef67d96a">
-
 For now, lets just modify the base image texture Alb. If you wanna learn about all the maps, I've made a list below this. I wouldent reccomend trying to mess with these textures yet so this is another list thats just here for future reference. Just skip to below the list if you dont care right now. 
 
+### Texture Names
 `Alb - Albedo` Base image texture. Can also be called `Diffuse`, `Diff`, or `Dif`
 
 `Mlt` Also a base image texture **Not to be confused with Mtl textures**
@@ -447,165 +619,6 @@ For now, lets just modify the base image texture Alb. If you wanna learn about a
 `Mai - Skin Mask` Image mask usually used to define what part of the model is skin and what is not. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65)
-
-4. Open the `Models` folder and export the model as a .dae (if there are multiple models, export all of them as .dae)
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c783d707-358c-485a-ad5c-c84c2c3224a6)
-
-5. Navigate to a directory you will remember. Make a new folder there to place the files in. Save inside that folder
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1e12ba1b-f9f1-4d7b-b2c6-cc567fa20e15)
-
-6. Toggle Use Old Exporter and untoggle Use Texture Channel Swaps
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/8e74a838-d132-44a1-a4db-7b31d708d17a)
-
-7. Open Blender and import the .dae (after deleting the default scene objects
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e7acea74-9225-4698-a9d9-38c95b595419)
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b580dc9e-9320-4048-bdab-3469931ad9f8)
-
-8. Adjust the edges of the editors to your liking. Then change the outliner editor to a shader editor
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/0f00fe25-9aa0-4d0d-a331-c2d539c90690)
-
-9. Set the `Specular` value of the principled BSDF node to `0.5` 
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/19224fec-741a-462c-b4c7-4b49e42b4e2d)
-
-10. For each of these image textures that your model came with, drag and drop them into the shader editor one by one. `Alb`, `Mtl`, `Nrm`, `Rgh`. these are just the bare basics to give us a preview
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/7b6c3125-4b80-4cf7-a7ec-fd95d168ce8d)
-
-11. Use `Shift` + `A` and type in "nm" or "normal map' into the text box to make a Normal Map node
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/7c872174-9f4d-484c-93bf-098992c714ab)
-
-12. This isnt a Blender tutorial so just make sure your node setup looks like this. the only things you need to look for are the things circled and the node connections
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/a111b6b0-cac8-46c6-be8c-6186846811f0)
-
-13. turn on material preview mode
-
- <img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/876af7dd-b6c2-43ed-a159-a167b54d5018">
-
-
-14. Your model may have multiple objects and materials. If so, here is how to assign them correctly (If you dont have multiple materials then skip to step 15)
-  - Your model has multiple materials if you see more than 1 prefix in your image texture files. this screenshot shows image texture files with a total of 3 prefixes
-  
-  <img width="839" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1cbe5a0e-4bc6-498e-837c-91d94427e2b9">
-  
-  - For each prefix you have, there should also be a material. The material for each prefix should be on its respective object. To view all the objects, pull up the timeline window hiding at the bottom of the screen and change the clock icon to be the one labaled outliner.
-  
-  <img width="589" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c1c225e1-2f70-44bd-9304-be9c3fce29ee">
-  
-  - Press `Shift` + `A` to expand everything and locate everything reperesented by a triangle icon. those are your objects. Click on an object and go to the material properties
-  
-  <img width="950" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2d8532dd-0bcd-434d-86ac-7c501f78e84b">
-  
-- Select the material and drag in the image textures which prefixes match the material name. Then repeat above process for each
-
-<img width="482" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fcf60101-03e0-40da-af58-6ac55123bc35">
-
-- Your model could also have multiple models that actually use the same texture but it has a different material. If your image textures only have 1 prefix but some part of your model is still white, then assign the white model(s) the same material as the other model
- 
-15. Change the properties editor to a UV Editor
- 
- <img width="616" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2ff66f6b-992e-4608-9bda-75b2f4340201">
-
-16. Open the image you want to edit. In this case, we are only editing the Alb image
-
- <img width="400" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/9b8d0372-5747-47cc-8caf-0badc5a61f48">
-
-17. Back in the viewport, select the model, press `Tab` to switch to edit mode, and press `A` to select all vertecies. Your UV editor should be filled with orange dots and lines
-
- <img width="860" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b504c7bc-eaee-4cf5-a28a-a565cd0a1fce">
-
-18. In the UV editor, click the UV pannel and select Export UV Layout. You may need to scroll down the menu to see it.
-
- <img width="395" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/81a2f384-a201-4e3d-8fe2-8ca3d87b298d">
-
-19. For organizational purposes, export the png file to the same place as all your image textures. Make sure to name it something that stands out
-
-20. Open your photo editing program. Import the Alb texture and place the exported UV layout image on top of it. Now we can see how the model displays the texture.
-
-21. Now go crazy. put anything you want on it. Remember not to change the size of the image though.
-
-TIP: Remember to repeat the above process to get the UV layout for **ALL** of the objects that use the same material and put that UV map over the first one. You'll know if multiple objects are using the same material if there is some detail that looks like it should be covered by a UV layout.
-
-22. Once done, hide the UV layout images so they dont appear in the final product. Export it in the same place as the original Alb image to replace it. we wont need it anymore
-
-23. Back in the shader editor, click on the Alb node. then hit `N` to bring up a panel. Go to the `Node` section on that panel. Click the refresh button to refresh the image texture and make sure its to your liking
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/ca50a936-8e3d-460b-b504-b8a09a30255a)
-
-25. Once ready, go back to toolbox and replace the Alb image on the model. The default settings in the window that pops up should be fine
-
-<img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/dae238af-b5d9-4d09-b7dd-45052ed0588e">
-
-26. Right click the `Textures` folder and click export
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e86377bc-3ea5-4f78-bb49-c98a1943e947)
-
-27. Save it as `textures.bntx` to where your model and textures are
-
-28. In toolbox, go to Tools > Compression > ZSTD > Decompress
-
-29. Find your model in the models forlder and open it
-
-30. Remove the `.zs.dec` in the name so the file extension becomes `.bfres`
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/79dd3b59-aeee-49c5-86a2-efd633ee198d)
-
-31. Save it to where you originally exported the model
-
-32. Open your hex editor. I'm using HxD
-
-33. Drag the `.bfres` file into the hex editor to open it. You should now see a bunch of random characters
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/86474eaf-3767-4eb4-8435-107afaa873be)
-
-34. Do the same for `textures.bntx` it should open in a new tab
-
-35. Go to the `textures.bntx` tab and copy all of it (`Ctrl` + `A` then `Ctrl` + `C`)
-
-36. Go back to the Wmn_Weapon_Name`.bfres` and hit `Ctrl` + `F`
-
-37. Type in "bntx"
-
-38. Click "Search All"
-
-39. We want the line that has "BNTX" in all caps. That should always be the second line
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/f5a733bc-4c1d-4508-9bca-9ce4244b0ffe)
-
-40. Click it to go to it.
-
-41. Click Right before the highlighted portion (42 4E 54 58) right click and click "Paste Write." You should now see a lot of red text.
-
-42. Hit `Ctrl` + `S` to save it. The text should be normal now. You can close the hex editor. (A `.bak` file might have been created. Ignore it)
-
-43. Lets check if it worked. Drag the `.bfres` file into toolbox. If everything worked, you should see your textures on it now.
-
-44. Go to Tools > Compression > ZSTD > Compress
-
-45. Navigate to your folder with the `.bfres` file you just opened and select it.
-
-46. Delete the "td" at the end of `zstd` on the file. it should now read Model_Name.bfres.zs
-
-47. Now navigate to your `romfs` folder for your SD card where you keep mods for the game. Inside your `romfs` location, make a folder called "Model" if it isnt there already.
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/780d6b5e-5b70-4076-bce3-c84fd9d0f1b2)
-ignore the 485348974563 mods I have in there its not important
-
-49. Save the `.bfres.zs` inside the model folder
-
-50. Boot up the game
-
-![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/95cf45d1-afa5-4a15-b22a-21152ccd8e6e)
-
-Awesome! You just finished your own weapon reskin.
 
 TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
 
