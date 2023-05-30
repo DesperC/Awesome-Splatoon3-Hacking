@@ -5,12 +5,27 @@ THIS REPO IS A HUGE W.I.P. and it is very unfinished. Its my side side project w
 
 This will not teach you to use mods/hacks online as that is unsafe. There might be a section to using camera hacks in battle replays later but thats it ****DO NOT USE ANY OF THIS ONLINE. MAKE SURE TO SET UP YOUR HACKED SWITCH PROPERLY****
 
+
+# Table of Contents
+- Getting Started
+- Essentials/Requirements
+  - Texture Replacement (Old)
+  - Texture Replacement
+  - Model Replacement
+  - Audio Replacement
+- Dumping RomFS
+  - Using an Emulator
+  - Using a Switch
+- Exporting, Editing, and Importing Save Files
+- How to use/install mods
+- File Types. Just for future reference
+
 # Getting Started
 You're gonna need a modded switch unless you would rather use an emulator. Tutorials can be found here. If you're modding a switch with a copy of Splatoon 3 already on it, good for you. If you're modding a switch with no copy of Splatoon 3 I reccomend buying a legit copy. If you're using an emulator, follow the link to setting up an emulator. It will show you how to get games.
 - [Setting up an emulator + Game](https://github.com/Abd-007/Switch-Emulators-Guide/blob/main/README.md)
 - [Hacking your switch](https://rentry.org/SwitchHackingIsEasy)
 
-# Essentials
+# Essentials/Requirements
 These are things you need get to help you on your hacking journey. These are all for game modding and NOT for hacking your switch and setting up custom firmware (CFW). For a guide on setting up your switch with CFW, see above section.
 
 - [Flexlion Mod Menu](https://flexlion.github.io/)
@@ -22,9 +37,13 @@ These are things you need get to help you on your hacking journey. These are all
 
 Below are sub-sections for programs that are specific to replacing certain aspects of the game. ***This is not a list of everything you can mod. Just a list of what mods require other programs.***
 
-### Texture Replacement
+### Texture Replacement (Old)
 - Hex Editor. Any hex editor will do. Personally, I use [HxD](https://mh-nexus.de/en/)
 - Image Editor (Duh)
+- [Blender](https://www.blender.org/) to check how the texture looks on the model
+
+### Texture Replacement
+- Image Editor (still, duh)
 - [Blender](https://www.blender.org/) to check how the texture looks on the model
 
 ### Model Replacement
@@ -42,6 +61,7 @@ Kuriimu 2 is a more permanant, install while Kuriimu is a lighter, portable solu
 - Audio Editor. I use [Audacity](https://www.audacityteam.org)
 
 # Dumping romfs
+
 ### Emulator (Beginner reccomended) (Required if you arent using switch)
 (Make sure you have any updates/DLC you want installed as an NSP) Right click the game and click "Dump RomFS" **Make sure to remember where you dumped these files or put them in a place you will remember.**
 
@@ -59,7 +79,7 @@ Go to [The Splatoon 3 Save Editor](https://flexlion.github.io/saveeditor.html) t
 
 To import it back to splatoon 3, refer to the second part of the tutorial above
 
-# How to use mods
+# How to use/install mods
 Before you create your first mod, you need to learn how to actually install them. Open the root of your SD card (for emulators go to the root of your virtual sd card) 
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4b9f7abb-1085-4121-bbbb-ade78938816b)
