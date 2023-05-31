@@ -399,15 +399,22 @@ ignore the 485348974563 mods I have in there its not important
 
 Awesome! You just finished your own weapon reskin.
 
-
-
 # Replacing Textures UNFINISHED
-### List of weapons as of Fresh Season 2023
+
+**This method is still experimental. if it fails, please refer to the above texture replacement guide in order to replace textures as it is much more reliable but takes a bit longer**
+
+let's make a mod that changes the base texture of your favorite weapon.
+
+1. Start by going into romfs/Model and searching for `Wmn` this will filter results so we only get main weapon models.
+
+### List of weapons as of Sizzle Season 2023
 `Blaster_Coop` Grizzco Blaster
 
 `Blaster_Light` Rapid Blaster + Rapid Blaster Pro
 
 `Blaster_Light_Cstm01` Rapid Blaster Deco
+
+`Blaster_Light_Cstm11` Rapid Blaster Pro Deco
 
 `Blaster_LightShort` Clash Blaster
 
@@ -417,9 +424,13 @@ Awesome! You just finished your own weapon reskin.
 
 `Blaster_Middle` Blaster
 
+`Blaster_Precision` S-Blast 92
+
 `Blaster_Short` Luna Blaster
 
 `Blaster_Short_Cstm01` Luna Blaster Neo
+
+`Brush_Heavy` Painbrush
 
 `Brush_Mini` Inkbrush
 
@@ -447,6 +458,8 @@ Awesome! You just finished your own weapon reskin.
 
 `Maneuver_Dual` Dualie Squelchers
 
+`Maneuver_Dual_Cstm01` Custom Dualie Squelchers
+
 `Maneuver_Gallon` Glooga Dualies
 
 `Maneuver_NormalT` Splat Dualies
@@ -456,6 +469,8 @@ Awesome! You just finished your own weapon reskin.
 `Maneuver_Short_Cstm01` Dapple Dualies Nouveau
 
 `Maneuver_Stepper` Dark Tetra Dualies
+
+`Maneuver_Stepper_Cstm01` Light Tetra Dualies
 
 `Roller_BrushNormal` Splatoon 2 Octobrush (For Amiibo)
 
@@ -475,9 +490,13 @@ Awesome! You just finished your own weapon reskin.
 
 `Roller_Wide` Big Swig Roller
 
+`Roller_Wide_Cstm01` Big Swig Roller Express
+
 `Saber_Coop` Grizzco Splatana
 
-`Saber_Lite` Splatana Wiper
+`Saber_Light` Splatana Wiper (Wiper can also be seen in other places named `Saber_Lite` instead)
+
+`Saber_Light_Cstm01` Splatana Wiper Deco
 
 `Saber_Normal` Splatana Stamper
 
@@ -488,6 +507,8 @@ Awesome! You just finished your own weapon reskin.
 `Shelter_Normal` Splat Brella
 
 `Shelter_Wide` Tenta Brella
+
+`Shelter_Wide_Cstm01` Sorella Tenta Brella
 
 `Shooter_Blaze` Aerospray MG
 
@@ -521,7 +542,11 @@ Awesome! You just finished your own weapon reskin.
 
 `Shooter_NormalT` Splattershot
 
+`Shooter_NormalT_Cstm01` Tentatek Splattershot
+
 `Shooter_QuickLong` Splattershot Nova
+
+`Shooter_QuickLong_Cstm01` Anakai Splattershot Nova
 
 `Shooter_Quickmiddle` N-Zap 85
 
@@ -540,6 +565,8 @@ Awesome! You just finished your own weapon reskin.
 `Shooter_Triple_Cstm01` L-3 Nozzlenose D
 
 `Shooter_TripleMiddle` H-3 Nozzlenose
+
+`Shooter_TripleMiddle_Cstm01` H-3 Nozzlenose D
 
 `Slosher_Bathtub` Bloblobber
 
@@ -568,6 +595,8 @@ Awesome! You just finished your own weapon reskin.
 `Spinner_Serein` Nautilus 47
 
 `Spinner_StandardT` Heavy Splatling
+
+`Spinner_StandardT_Cstm01` Heavy Splatling Deco
 
 `Stringer_Coop` Grizzco Stringer
 
