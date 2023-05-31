@@ -260,7 +260,7 @@ For now, lets just modify the base image texture Alb. If you wanna learn about a
 
 ### 6. Toggle Use Old Exporter and untoggle Use Texture Channel Swaps
 
-if you're here from the updated texture tutorial, follow along until step 
+if you're here from the updated texture tutorial, follow along until step 25
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/8e74a838-d132-44a1-a4db-7b31d708d17a)
 
@@ -347,6 +347,8 @@ TIP: Remember to repeat the above process to get the UV layout for **ALL** of th
 25. Once ready, go back to toolbox and replace the Alb image on the model. The default settings in the window that pops up should be fine
 
 <img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/dae238af-b5d9-4d09-b7dd-45052ed0588e">
+
+**If you're following along with the new tutorial, return back to that section using this link. if you're using this tutoairl because that method diddnt work, ignore this message.
 
 26. Right click the `Textures` folder and click export
 
@@ -668,7 +670,12 @@ Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/
 5. right click on the model that uses the texture(s) you want to modify
 6. export it as `.dae` to the same folder your `.bfres` is in.
 7. check `Use Old Exporter` and uncheck `Use Texture Channel Swaps`
-8. refer to this section of the old method because i cant be bothered to explain again.
+8. refer to [this section](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#6-toggle-use-old-exporter-and-untoggle-use-texture-channel-swaps) of the old method because i cant be bothered to explain again.
+
+### 9. Save the .bfres file using the save icon in the top left corner
+
+10. Recompress the file using Tools > Compression > ZSTD > Compress and compress the bfres file
+11. remove the "td" at the end of `zstd` to make it just say 'zs' and then save that file to the model folder of your sd card romfs directory.
 
 TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
 
