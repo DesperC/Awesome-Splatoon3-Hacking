@@ -421,6 +421,11 @@ let's make a mod that changes the base texture of your favorite weapon.
 
 1. Start by going into romfs/Model and searching for `Wmn` this will filter results so we only get main weapon models.
 
+if you wanna do a peice of gear instead there are lists for all gear codenames with pictures up until 3.0.0 for now made by my friend John#1878 on discord
+[Headgear]([url](https://docs.google.com/document/d/1SaQOljCMUCjGNYzhnbqUHCXR1vrdef67vUVbcv_2Lkg/edit))
+[Clothing](https://docs.google.com/document/d/1bIje-QhxGa0EThWjB5V9xj_Jqfj9D8Bjkb-Wu9ruNSg/edit)
+[Shoes](https://docs.google.com/document/d/1MwfrztugDbqNlU6S87Oflz-WQrSwxC20zV25aqNwn9k/edit)
+
 ### List of weapons as of Sizzle Season 2023
 
 `Blaster_Coop` Grizzco Blaster
