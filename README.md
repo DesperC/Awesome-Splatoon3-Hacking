@@ -67,7 +67,17 @@ Kuriimu 2 is a more permanant, install while Kuriimu is a lighter, portable solu
 (Make sure you have any updates/DLC you want installed as an NSP) Right click the game and click "Dump RomFS" **Make sure to remember where you dumped these files or put them in a place you will remember.**
 
 ### Switch (Not for beginners)
-Not typed out yet. use LockpickRCM to obtain your keys files and Nxdumptool to dump the game files. explainataions on all of this will come soon
+you need Lockpick RCM and Nxdumptool
+
+im not allowed to link LockpickRCM but you can find it so many places here on github. just search it and download te .bin file
+
+then watch[ this video](https://www.youtube.com/watch?v=mKw2ips97og) on how to use it
+
+once you finish that, download [Nxdumptool nro file](https://github.com/DarkMatterCore/nxdumptool/releases)
+
+then watch [this video](https://www.youtube.com/watch?v=BZpK2JT8lcI) on how to use that
+
+only reason i dont explain myself is because this guide is focused on how to mod the game rather than the setup
 
 # Exporting, Editing, and Importing Save Files
 First ya gotta obtain a save file. you can get your own save file to hack **OR** download the one in the [essential downloads](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#essentials)
@@ -231,7 +241,7 @@ Lets do one more harmless mod before we get into the fun stuff.
 
 However, these arent images so we cant use our previous method for trying to figure out which is which although soon enough you'll have all the main, sub, and special internal names memorized. For now here is a list on which is which. This is also the order they should appear in your files
 
-### [This list is as of Fresh Season 2023](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#list-of-weapons-as-of-fresh-season-2023)
+### [This list is as of Sizzle Season 2023](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#list-of-weapons-as-of-fresh-season-2023)
 
 2. Choose your favorite weapon and drag it into toolbox
 3. Open the file dropdown and the textures dropdown
@@ -248,7 +258,9 @@ For now, lets just modify the base image texture Alb. If you wanna learn about a
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1e12ba1b-f9f1-4d7b-b2c6-cc567fa20e15)
 
-6. Toggle Use Old Exporter and untoggle Use Texture Channel Swaps
+### 6. Toggle Use Old Exporter and untoggle Use Texture Channel Swaps
+
+if you're here from the updated texture tutorial, follow along until step 
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/8e74a838-d132-44a1-a4db-7b31d708d17a)
 
@@ -408,6 +420,7 @@ let's make a mod that changes the base texture of your favorite weapon.
 1. Start by going into romfs/Model and searching for `Wmn` this will filter results so we only get main weapon models.
 
 ### List of weapons as of Sizzle Season 2023
+
 `Blaster_Coop` Grizzco Blaster
 
 `Blaster_Light` Rapid Blaster + Rapid Blaster Pro
@@ -648,6 +661,14 @@ For now, lets just modify the base image texture Alb. If you wanna learn about a
 `Mai - Skin Mask` Image mask usually used to define what part of the model is skin and what is not. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
 
 Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65)
+
+2. decompress the file using Tools > Compression > ZSTD > Decompress and save it to a place you can find it.
+3. drag the `.bfres` file you just decompressed into toolbox
+4. click on the model folder.
+5. right click on the model that uses the texture(s) you want to modify
+6. export it as `.dae` to the same folder your `.bfres` is in.
+7. check `Use Old Exporter` and uncheck `Use Texture Channel Swaps`
+8. refer to this section of the old method because i cant be bothered to explain again.
 
 TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
 
