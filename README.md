@@ -348,7 +348,7 @@ TIP: Remember to repeat the above process to get the UV layout for **ALL** of th
 
 <img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/dae238af-b5d9-4d09-b7dd-45052ed0588e">
 
-**If you're following along with the new tutorial, return back to that section using this link. if you're using this tutoairl because that method diddnt work, ignore this message.
+**If you're following along with the new tutorial, return back to that section using [this link](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#9-save-the-bfres-file-using-the-save-icon-in-the-top-left-corner). if you're using this tutoairl because that method diddnt work, ignore this message.
 
 26. Right click the `Textures` folder and click export
 
