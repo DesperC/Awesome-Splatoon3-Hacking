@@ -423,7 +423,7 @@ let's make a mod that changes the base texture of your favorite weapon.
 
 if you wanna do a peice of gear instead there are lists for all gear codenames with pictures up until 3.0.0 for now made by my friend John#1878 on discord
 
-[Headgear]([url](https://docs.google.com/document/d/1SaQOljCMUCjGNYzhnbqUHCXR1vrdef67vUVbcv_2Lkg/edit))
+[Headgear](https://docs.google.com/document/d/1SaQOljCMUCjGNYzhnbqUHCXR1vrdef67vUVbcv_2Lkg/edit)
 
 [Clothing](https://docs.google.com/document/d/1bIje-QhxGa0EThWjB5V9xj_Jqfj9D8Bjkb-Wu9ruNSg/edit)
 
