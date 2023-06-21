@@ -413,7 +413,7 @@ ignore the 485348974563 mods I have in there its not important
 
 Awesome! You just finished your own weapon reskin.
 
-# Replacing Textures UNFINISHED
+# Replacing Textures
 
 **This method is still experimental. if it fails, please refer to the above texture replacement guide in order to replace textures as it is much more reliable but takes a bit longer**
 
