@@ -688,13 +688,13 @@ Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/
 TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
 
 # Replacing Text.
-This is how i made my Google Translate Mod. Hours of copying text from the game and putting it through translate a million times. Cant beleive im gonna do the same thing for side order
+This is how i made my Google Translate Mod. Hours of copying text from the game and putting it through translate a million times. Cant believe im gonna do the same thing for side order
 
 Anyways enough of my crippling anxiety, lets start by [downloading the required editor](https://github.com/DesperC/Awesome-Splatoon3-Hacking?scrlybrkr=c562aa65#text-replacement)
 
 I would reccomend setting Kuriimu as your default .msbt editing program so you dont need to drag the file in the program to open it every time.
 
-1. In your romds dump, open the Mals folder. i'm assuming youre language is english so we want this file right here
+1. In your romfs dump, open the Mals folder. i'm assuming youre language is english so we want this file right here
 
 <img width="224" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1d31f2c2-80d4-4efc-9c39-24d676f2721e">
 
