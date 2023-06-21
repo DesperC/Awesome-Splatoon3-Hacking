@@ -775,7 +775,7 @@ Text editing is one of the simplest but most effective ways of modding in my opi
 Not started yet but you can use when ive already taught you to edit the files in the Layout folder
 
 # Replacing Audio
-This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to here. Otherwise follow this tutorial
+This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to the next section. Otherwise follow this tutorial
 
 cant be bothered to write out my own right now. might do this last. for now, refer to [this tutorial](https://gamebanana.com/tuts/15422)
 
