@@ -884,7 +884,7 @@ Alright. Now we can get to editing kits.
 
 - Weapon UI Values (a.e the game showing you how much range the weapon has)
 
-- Weapon Call. This is a bit more complicated and is explained what it is and how to do later in the guide.
+- Weapon ID. This is a bit more complicated and is explained what it is and how to do later in the guide.
 
 10. Right now, we will only need to look at these 3 lines
 
@@ -949,6 +949,8 @@ This file contains all main, sub, special weapon parameters as well as stage par
 3.  save it as `Params.pack` to a location you can find easily
 
 4.  open the newly saved `Params.pack` in toolbox
+
+We are going to search for the code name of a weapon we want to modify. If you want to modify its functionality specifically for salmon run or hero mode, add `_Msn` for hero mode or `_Coop` for salmon run to the end of the search.
 
 5.  Hit the search button and search for ShooterQuickLong. To find splattershot nova. however this brings up 2 files
 
