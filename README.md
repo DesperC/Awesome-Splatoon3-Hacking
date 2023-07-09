@@ -23,7 +23,7 @@ This will not teach you to use mods/hacks online as that is unsafe. There might 
 
 # Getting Started
 You're gonna need a modded switch unless you would rather use an emulator. Tutorials can be found here. If you're modding a switch with a copy of Splatoon 3 already on it, good for you. If you're modding a switch with no copy of Splatoon 3 I reccomend buying a legit copy. If you're using an emulator, follow the link to setting up an emulator. It will show you how to get games.
-- [Setting up an emulator + Game](https://github.com/Abd-007/Switch-Emulators-Guide/blob/main/README.md)
+- [Setting up an emulator + Game] link removed due to piracy
 - [Hacking your switch](https://rentry.org/SwitchHackingIsEasy)
 
 # Essentials/Requirements
