@@ -3,6 +3,8 @@ repo containing resources to learn splatoon 3 hacking/modding
 
 THIS REPO IS A HUGE W.I.P. and it is very unfinished. Its my side side project when i literally have nothing else to work on
 
+if at any point you feel stuck or need help, feel free to join [the splatoon modding discord server](https://discord.gg/P6RNNvk)
+
 This will not teach you to use mods/hacks online as that is unsafe. There might be a section to using camera hacks in battle replays later but thats it ****DO NOT USE ANY OF THIS ONLINE. MAKE SURE TO SET UP YOUR HACKED SWITCH PROPERLY****
 
 
@@ -1001,10 +1003,10 @@ Lets start by giving it 100 damage just for the hell of it.
 
 Nova is finally a functioning weapon. 
 
-and thats basically everything about splatoon 3 modding. the next sections and sub sections of the tutorial are just to be used as reference points for how to do specific things. think of it as the Splatoon 3 API Documentation.
-
 # Specific Weapon Parameters
-This section will have sub sections that all focus on telling you where and how to modify more specific weapon functionality. general functions of a class will not be covered as they are either unimportant or easy to understand yourself.
+This section will have sub sections that all focus on telling you where and how to modify more specific weapon functionality. general functions of a class will not be covered as they are either unimportant or easy to understand yourself. If you dont see a specific variable in the wepon you're editing, try adding that variable. For example, dualies dodge number is based on the `RepeatCnt` variable. However, that variable only shows up on tetras. This is because it's left at the default value (2) for all other dualies. All you need to do in this case is add that variable in the same place and in the same way you see it on tetras.
+
+This section will not cover everything you can do. Just some interesting things you can start with
 
 ### Ink Consumption
 Down in the `WeaponParam` section for your weapon you will find a variable called `InkConsume` this variable tells the game how much ink to remove from the tank **per shot**.
@@ -1013,14 +1015,22 @@ Down in the `WeaponParam` section for your weapon you will find a variable calle
 find a section called `PaintParam` these give you a ton of customization for how much paint the weapon does. Multiplying all the values by 10 gives you some really fun results.
 
 ### RNG
+Down in the `WeaponParam` section for your weapon you will find multiple variables that start with `Jump_DegBias` and ` Stand_DegBias`. The Int values relate to how quickly (in frames) the RNG takes effect and the float values relate to how much RNG the weapon has in what situation (Jump or Stand)
 
 ### Range
+At around line 18 where `MoveParam` is, find the variable called `SpawnSpeed`. While it might not look like it, this is range. The number represents range based on the weapon meaning something like inkbrush and 
+ E-Liter will have similar values for this. Try not to think about it too hard. 
 
 ### Damage
+Everything in `DamageParam` aside from `ReduceEndFrame` and `ReduceStartFrame`
 
 ### Fire Rate
+Down in `WeaponParam` find the variable called `RepeatFrame` this tells the game to shoot a bullet every `X` frames 
 
-### Chargers - Homemade Aimbot
+### Homemade Aimbot
+Up in `CollisionParam`, edit every variable that contains the word "Radius" to be maybe 50X larger. Also make sure that all of those values are the same. This increases the radius of your bullet's hitbox making it easier to hit targets as well as objects blocking the way.
+
+# Class Specific Parameters
 
 ### Chargers - Increase Air Charge Speed
 
@@ -1034,17 +1044,11 @@ find a section called `PaintParam` these give you a ton of customization for how
 
 ### Shooters - L-3 and H-3 Shooting (3 Shots)
 
-### Shooters - Squeezer Shooting (Semi-Auto)
-
-### Brellas - Undercover Brella Shooting (Keep Sheild)
-
 ### Splatanas - 1-Shot Radius
 
 ### Brushes - Rolling Ink Resistance
 
 ### Brushes - Roll Speed
-
-### Blasters - Intensify Action Reduce RNG
 
 ### Blasters - Explosion Radius
 
@@ -1054,17 +1058,17 @@ find a section called `PaintParam` these give you a ton of customization for how
 
 ### Stringers - Jump Tilt Angle
 
-### Stringers - Guide Trajectory
+### Stringers - Trajectory Guide 
 
-### Bloblobber - Blob Parameters
-
-### Object Place Number
+### Object Place Limit
 
 # Misc
 
-### Ink Splatter Textures
+### Actor Swapping
 
-### The Layout Folder
+### Weapon ID Swapping
+
+### Ink Splatter Textures
 
 ### Stage Editing
 Stage editing is pretty complex but right now, its not even possible with most of the stages. toolbox kinda dosent compile some of the byml files correctly so until thats fixed, dont worry about it
