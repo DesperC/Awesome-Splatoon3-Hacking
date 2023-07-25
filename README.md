@@ -7,19 +7,20 @@ This will not teach you to use mods/hacks online as that is unsafe. There might 
 
 
 # Table of Contents
-- Getting Started
-- Essentials/Requirements
-  - Texture Replacement (Old)
-  - Texture Replacement
-  - Model Replacement
-  - Audio Replacement
-- Dumping RomFS
-  - Using an Emulator
-  - Using a Switch
-- Exporting, Editing, and Importing Save Files
-- How to use/install mods
-- File Types. Just for future reference
-- Your First Mod (Tutorial)
+- [Getting Started](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#getting-started)
+- [Essentials/Requirements](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#essentialsrequirements)
+  - [Texture Replacement (Old)](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#texture-replacement-old)
+  - [Texture Replacement](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#texture-replacement)
+  - [Model Replacement](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#model-replacement)
+  - [Text Replacement](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#text-replacement)
+  - [Audio Replacement](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#audio-replacement)
+- [Dumping RomFS](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#dumping-romfs)
+  - [Using an Emulator](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#emulator-beginner-reccomended-required-if-you-arent-using-switch)
+  - [Using a Switch](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#switch-not-for-beginners)
+- [Exporting, Editing, and Importing Save Files](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#exporting-editing-and-importing-save-files)
+- [How to use/install mods](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#how-to-useinstall-mods)
+- [File Types. Just for future reference](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#file-types-just-for-future-reference)
+- [Your First Mod (Tutorial)](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#your-first-mod-tutorial)
 
 # Getting Started
 This section originally contained links to setting up a hacked switch and emulator but both have been removed due to piracy. Neither of them are hard to find though
