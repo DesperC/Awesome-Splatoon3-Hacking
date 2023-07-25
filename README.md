@@ -22,9 +22,7 @@ This will not teach you to use mods/hacks online as that is unsafe. There might 
 - Your First Mod (Tutorial)
 
 # Getting Started
-You're gonna need a modded switch unless you would rather use an emulator. Tutorials can be found here. If you're modding a switch with a copy of Splatoon 3 already on it, good for you. If you're modding a switch with no copy of Splatoon 3 I reccomend buying a legit copy. If you're using an emulator, follow the link to setting up an emulator. It will show you how to get games.
-- [Setting up an emulator + Game] link removed due to piracy
-- [Hacking your switch]([https://rentry.org/SwitchHackingIsEasy](https://nh-server.github.io/switch-guide/))
+This section originally contained links to setting up a hacked switch and emulator but both have been removed due to piracy. Neither of them are hard to find though
 
 # Essentials/Requirements
 These are things you need get to help you on your hacking journey. These are all for game modding and NOT for hacking your switch and setting up custom firmware (CFW). For a guide on setting up your switch with CFW, see above section.
@@ -32,7 +30,6 @@ These are things you need get to help you on your hacking journey. These are all
 - [Flexlion Mod Menu](https://flexlion.github.io/)
 - [Splatoon 3 Save Editor (from flexlion)](https://flexlion.github.io/saveeditor.html)
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox)
-  - [Visual Studio (for compiling, not reccomended for beginners, completely optional)](https://visualstudio.microsoft.com/)
 - [7-Zip](https://www.7-zip.org/) I would highly reccomend that you set 7-Zip as your main archiving app so it will open .zip files by default
 - [A Full Splatoon 3 Save](https://ptb.discord.com/channels/410208534861447168/830855276437438485/1081218616734793738) (you can skip this if your save already has everything you want AND you know how to export the save as a file using EdiZon) if you cant get to the file, you need to join the [Ryujinx discord server](https://discord.gg/ryujinx) to get it even if you arent using Ryujinx. It will work on both an emulator and the switch.
 
