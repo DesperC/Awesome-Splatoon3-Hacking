@@ -5,6 +5,8 @@ THIS REPO IS A HUGE W.I.P. and it is very unfinished. Its my side side project w
 
 if at any point you feel stuck or need help, feel free to join [the splatoon modding discord server](https://discord.gg/P6RNNvk)
 
+most of this stuff is old so join the server above to get help if you still need any
+
 This will not teach you to use mods/hacks online as that is unsafe. There might be a section to using camera hacks in battle replays later but thats it ****DO NOT USE ANY OF THIS ONLINE. MAKE SURE TO SET UP YOUR HACKED SWITCH PROPERLY****
 
 
